@@ -12,15 +12,13 @@
             box-sizing: border-box;
         }
 
-        h2 {
-            margin-top: 30px;
-        }
+        
 
-        .body {
+        /* .body {
             display: flex;
             justify-content: center;
             align-items: center;
-        }
+        } */
 
         .signUp {
             width: 500px;
@@ -103,8 +101,6 @@
             margin-bottom: 20px;
         }
 
-
-
         .birthDay-info {
             margin-top: 20px;
         }
@@ -112,6 +108,8 @@
         #day {
             margin-left: 30px;
             width: 50px;
+            text-align: right;
+            
         }
 
 
@@ -133,7 +131,7 @@
 </head>
 
 <body>
-    <div class="body">
+    <!-- <div class="body"> -->
         <div class="signUp"> <!-- 회원가입 전체 바디-->
 
             <h2>회원가입</h2>
@@ -211,7 +209,7 @@
                         </select>
                         <span>월</span>
 
-                        <input type="text" id="day">
+                        <input type="text" id="day" maxlength="2">
                         <span>일</span>
                     </div>
                 </div>
@@ -223,7 +221,7 @@
 
             </div>
         </div>
-    </div>
+    <!-- </div> -->
 
 </body>
 
