@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .footer {
+            width: 100%;
+            height: 250px;
+            padding-top: 50px;
+            background-color: #444;
+
+        }
+        
+
+        .footer-top {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .footer-bottom {
+            margin-top: 10px;
+            margin-left: 30px;
+            
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .footer-bottom>p {
+            width: 60%;
+            color: #fff;
+            font-size: 1.2rem;
+        }
+
+        .footer-bottom>p:first-child {
+            margin-top: 15px;
+        }
+
+
+        .footer-btns {
+            display: flex;
+            margin-right: 20px;
+        }
+
+        .footer-btns>a {
+            margin-right: 10px;
+
+            text-decoration: none;
+            font-size: 1.3rem;
+            color: #fff;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer-btns>a:not(:first-child)::before {
+            width: 1px;
+            height: 14px;
+            margin-right: 10px;
+            
+            display: block;
+            content: "";
+
+            background-color: #838383;
+        }
+
+        #footer-logo {
+            width: 232px;
+            height: 53px;
+            object-fit: cover;
+
+            margin-left: 30px;
+        }
+
+
+        .copyRight {
+            margin-top: 10px;
+        }
+
+        .sns-btns{
+            margin-right: 30px;
+            margin-bottom: 20px;
+            align-content: center;
+        }
+
+        .footer-select{
+            width: 250px;
+            height: 45px;
+            margin-left: 20px;
+            padding-left: 5px;
+            
+            background-color: #3c3c3c;
+            color: #fff;
+        }
+
+        .sns-btns img{
+            margin-left: 5px;
+            margin-right: 20px;
+            padding-top: 5px;
+            height: 25px;
+            object-fit: cover;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="footer">
+
+        <div class="footer-top">
+
+            <img src="images/국립중앙박물관_흑백로고.PNG" alt="" id="footer-logo"> <!-- footer 왼쪽 상단 로고-->
+
+            <div class="footer-btns"> <!-- footer 우측 상단 a태그-->
+                <a href="">개인정보처리방침</a>
+                <a href="">박물관소개</a>
+                <a href="">관람안내</a>
+                <a href="">이용약관</a>
+                <a href="">전시해설</a>
+                <a href="">누리집지도</a>
+                <a href="">박물관정책</a>
+            </div>
+        </div>
+
+
+        <div class="footer-bottom">
+            
+            <p class="adress">04383 서울시 용산구 서빙고로 137(용산동6가 168-6)</p>
+            <p class="adress" id="adress-num">대표전화 02-1234-7890</p>
+
+            <p class="copyRight">© NATIONAL Integrated Museum of Korea ALL RIGHT RESERVED.</p>
+
+            <div class="sns-btns">
+                <a href=""><img src="images/footerImages/ico_facebook.png" alt=""></a>
+                <a href=""><img src="images/footerImages/ico_insta.png" alt=""></a>
+                <a href=""><img src="images/footerImages/ico_tw.png" alt=""></a>
+                <a href=""><img src="images/footerImages/ico_youtube.png" alt=""></a>
+                <select class="footer-select">
+                    <option>관련기관 바로가기</option>
+                    <option>국립중앙박물관</option>
+                    <option>국립경주박물관</option>
+                    <option>국립익산박물관</option>
+                </select>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
