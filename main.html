@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .header {
+            width: 100%;
+            position: fixed;
+        }
+
+        .header-side {
+            margin-right: 30px;
+            display: flex;
+            justify-content: right;
+        }
+
+        #head-login,
+        #head-signup {
+            width: 70px;
+            height: 35px;
+
+            text-decoration: none;
+            color: #444444;
+            letter-spacing: -2px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            transition-property: all;
+            transition-duration: 0.4s;
+        }
+
+        #head-login:hover,
+        #head-signup:hover {
+            background-color: #444444;
+            color: #fff;
+        }
+
+        #header-logo {
+            margin-left: 40px;
+            vertical-align: middle;
+        }
+
+        .header-nav {
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            flex-wrap: wrap;
+        }
+
+
+
+        .depth1 {
+            display: inline-block;
+
+            /* position: relative; */
+            margin-left: 100px;
+
+            margin-top: 15px;
+
+        }
+
+        .depth1>li {
+            display: inline-block;
+            margin-right: 40px;
+
+            
+
+        }
+
+        .depth1 a {
+            text-decoration: none;
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: #222222;
+            letter-spacing: -2px;
+        }
+
+        
+
+        .depth1 img {
+
+            width: 25px;
+            height: 25px;
+            object-fit: cover;
+        }
+
+        .sub-menu {
+            width: 100%;
+            height: 40px;
+           
+            display: block;
+            visibility: hidden;
+            opacity: 0;
+
+            position: absolute;
+            top: 100px;
+            left: 0;
+            background: #222222;
+            
+            transition-property: all;
+            transition-duration: 0.7s;
+            transition-timing-function: ease-out;
+        }
+
+        .sub-menu > ul {
+            display: flex;
+            justify-content: right;
+            
+        }
+
+        .sub-menu > ul > li > a {
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: 500;
+            
+        }
+
+        .depth2 {
+            display: inline-block;
+        }
+
+        .depth2 > li {
+            display: inline-block;
+            margin-top: 5px;
+            margin-right: 20px;
+            vertical-align: middle;
+        }
+
+        .depth1 > li:hover .sub-menu{
+           /* 질문하기 */
+           visibility: visible;
+           opacity: 1;
+
+        }
+
+        .depth1-btn:hover {
+            text-decoration: underline;
+            text-underline-offset: 10px;
+        }
+
+
+
+        
+
+
+    </style>
+</head>
+
+<body>
+    <div class="header"> <!-- 사이트 헤더 -->
+        <div class="header-side">
+            <a href="http://127.0.0.1:5500/integratedMuseum/login.html" id="head-login">로그인</a>
+            <a href="http://127.0.0.1:5500/integratedMuseum/signUp.html" id="head-signup">회원가입</a>
+        </div>
+
+        <div class="header-nav">
+            <img src="images/국립중앙박물관_컬러로고.png" alt="" id="header-logo">
+            <ul class="depth1">
+                <li>
+                    <a href="" class="depth1-btn">관람정보</a>
+                    <div class="sub-menu">
+                        <ul class="depth2">
+                            <li><a href="">관람안내</a></li>
+                            <li><a href="">관람해설</a></li>
+                            <li><a href="">오시는 길</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="" class="depth1-btn">전시</a>
+
+                </li>
+
+                <li>
+                    <a href="" class="depth1-btn">교육</a>
+                </li>
+
+                <li>
+                    <a href="" class="depth1-btn">학술정보</a>
+                </li>
+
+                <li>
+                    <a href="" class="depth1-btn">소장품</a>
+                </li>
+
+                <li>
+                    <a href="" class="depth1-btn">소속박물관 소개</a>
+                </li>
+
+                <li>
+                    <a href="" ><img src="images/헤더_검색.png" alt=""></a>
+                </li>
+            </ul>
+
+
+        </div>
+
+    </div>
+
+    <div class="main"> <!-- 메인화면(메인표지, 전시 애니메이션 등등)-->
+    </div>
+
+
+    <script>
+        // let depth1Btn1 =  document.querySelector(".depth1-btn1");
+        // let subMenu = document.querySelector(".sub-menu");
+        // depth1Btn1.addEventListener('mouseover', () => {
+        //     subMenu.style.display = "block";
+
+        // });
+        // depth1Btn1.addEventListener('mouseleave', () => {
+        //     subMenu.style.display = "none";
+        // });
+    </script>
+</body>
+
+</html>
