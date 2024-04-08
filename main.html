@@ -5,163 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        .header {
-            width: 100%;
-            position: fixed;
-        }
-
-        .header-side {
-            margin-right: 30px;
-            display: flex;
-            justify-content: right;
-        }
-
-        #head-login,
-        #head-signup {
-            width: 70px;
-            height: 35px;
-
-            text-decoration: none;
-            color: #444444;
-            letter-spacing: -2px;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            transition-property: all;
-            transition-duration: 0.4s;
-        }
-
-        #head-login:hover,
-        #head-signup:hover {
-            background-color: #444444;
-            color: #fff;
-        }
-
-        #header-logo {
-            margin-left: 40px;
-            vertical-align: middle;
-        }
-
-        .header-nav {
-            display: flex;
-            justify-content: space-between;
-            align-content: center;
-            flex-wrap: wrap;
-        }
-
-
-
-        .depth1 {
-            display: inline-block;
-
-            /* position: relative; */
-            margin-left: 100px;
-
-            margin-top: 15px;
-
-        }
-
-        .depth1>li {
-            display: inline-block;
-            margin-right: 40px;
-
-            
-
-        }
-
-        .depth1 a {
-            text-decoration: none;
-            font-size: 1.6rem;
-            font-weight: 600;
-            color: #222222;
-            letter-spacing: -2px;
-        }
-
         
-
-        .depth1 img {
-
-            width: 25px;
-            height: 25px;
-            object-fit: cover;
-        }
-
-        .sub-menu {
-            width: 100%;
-            height: 40px;
-           
-            display: block;
-            visibility: hidden;
-            opacity: 0;
-
-            position: absolute;
-            top: 100px;
-            left: 0;
-            background: #222222;
-            
-            transition-property: all;
-            transition-duration: 0.7s;
-            transition-timing-function: ease-out;
-        }
-
-        .sub-menu > ul {
-            display: flex;
-            justify-content: right;
-            
-        }
-
-        .sub-menu > ul > li > a {
-            color: #fff;
-            font-size: 1.2rem;
-            font-weight: 500;
-            
-        }
-
-        .depth2 {
-            display: inline-block;
-        }
-
-        .depth2 > li {
-            display: inline-block;
-            margin-top: 5px;
-            margin-right: 20px;
-            vertical-align: middle;
-        }
-
-        .depth1 > li:hover .sub-menu{
-           /* 질문하기 */
-           visibility: visible;
-           opacity: 1;
-
-        }
-
-        .depth1-btn:hover {
-            text-decoration: underline;
-            text-underline-offset: 10px;
-        }
-
-
-
-        
-
-
     </style>
 </head>
 
 <body>
     <div class="header"> <!-- 사이트 헤더 -->
         <div class="header-side">
-            <a href="http://127.0.0.1:5500/integratedMuseum/login.html" id="head-login">로그인</a>
-            <a href="http://127.0.0.1:5500/integratedMuseum/signUp.html" id="head-signup">회원가입</a>
+            <a href=""><img src="images/footerImages/ico_facebook.png" alt=""></a>
+            <a href=""><img src="images/footerImages/ico_insta.png" alt=""></a>
+            <a href=""><img src="images/footerImages/ico_tw.png" alt=""></a>
+            <a href=""><img src="images/footerImages/ico_youtube.png" alt=""></a>
+            <a href="./login.html" id="head-login">로그인</a>
+            <a href="./signUp.html" id="head-signup">회원가입</a>
         </div>
 
         <div class="header-nav">
@@ -173,56 +31,208 @@
                         <ul class="depth2">
                             <li><a href="">관람안내</a></li>
                             <li><a href="">관람해설</a></li>
+                            <li><a href="">시설안내</a></li>
                             <li><a href="">오시는 길</a></li>
+                            <li><a href="">접근성 안내</a></li>
                         </ul>
                     </div>
                 </li>
 
                 <li>
                     <a href="" class="depth1-btn">전시</a>
-
+                    <div class="sub-menu">
+                        <ul class="depth2">
+                            <li><a href="">상설전시</a></li>
+                            <li><a href="">특별전시</a></li>
+                            <li><a href="">옥외전시</a></li>
+                            <li><a href="">온라인 전시관</a></li>
+                            <li><a href="">디지털 실감 상영관</a></li>
+                        </ul>
+                    </div>
                 </li>
 
                 <li>
                     <a href="" class="depth1-btn">교육</a>
+                    <div class="sub-menu">
+                        <ul class="depth2">
+                            <li><a href="">교육/행사 소식</a></li>
+                            <li><a href="">교육프로그램</a></li>
+                            <li><a href="">문화행사</a></li>
+                            <li><a href="">교육자료실</a></li>
+                            <li><a href="">자원봉사</a></li>
+                        </ul>
+                    </div>
                 </li>
 
                 <li>
                     <a href="" class="depth1-btn">학술정보</a>
+                    <div class="sub-menu">
+                        <ul class="depth2">
+                            <li><a href="">학술행사</a></li>
+                            <li><a href="">발간자료</a></li>
+                            <li><a href="">보존과학</a></li>
+                            <li><a href="">도서관</a></li>
+                            <li><a href="">고고학</a></li>
+                            <li><a href="">역사학</a></li>
+                        </ul>
+                    </div>
                 </li>
 
                 <li>
                     <a href="" class="depth1-btn">소장품</a>
+                    <div class="sub-menu">
+                        <ul class="depth2">
+                            <li><a href="">소장품 검색</a></li>
+                            <li><a href="">국보·보물</a></li>
+                            <li><a href="">기증</a></li>
+                            <li><a href="">큐레이터 추천 소장품</a></li>
+                            <li><a href="">소장품 대여안내</a></li>
+                        </ul>
+                    </div>
                 </li>
 
                 <li>
                     <a href="" class="depth1-btn">소속박물관 소개</a>
+                    <div class="sub-menu">
+                        <ul class="depth2">
+                            <li><a href="">국립중앙박물관</a></li>
+                            <li><a href="">국립경주박물관</a></li>
+                            <li><a href="">국립공주박물관</a></li>
+                            <li><a href="">국립나주박물관</a></li>
+                            <li><a href="">국립부여박물관</a></li>
+                            <li><a href="">국립익산박물관</a></li>
+                            <li><a href="">국립춘천박물관</a></li>
+                        </ul>
+                    </div>
                 </li>
 
                 <li>
-                    <a href="" ><img src="images/헤더_검색.png" alt=""></a>
+                    <a href=""><img src="images/헤더_검색.png" alt=""></a>
                 </li>
             </ul>
 
-
         </div>
-
     </div>
 
     <div class="main"> <!-- 메인화면(메인표지, 전시 애니메이션 등등)-->
+
+        <div class="main-pic">
+            <div class="main-pic-slide"></div>
+            <div class="main-pic-slide"></div>
+            <div class="main-pic-slide"></div>
+            <div class="main-pic-slide"></div>
+            <div class="main-pic-slide"></div>
+            
+            <button class="pic-control"><img src="../integratedMuseum/images/main-pic/play.png" alt=""></button>
+        </div>
+
+
+        <div class="notice-section">
+            
+            <div class="notice">
+                <h3>공지사항</h3>
+                <ul>
+                    <li class="notice-list">
+                        <a href="">
+                            <div>
+                                <div class="notice-icon">
+                                    <p class="notice-p">공지</p>
+                                    <p class="notice-state">통합중앙박물관 응급대기실 매주(목) 휴실 안내</p>
+                                </div>
+                                
+                                <span>2024-04-08</span>
+                            </div>
+                        </a>
+                        
+                    </li>
+                    
+                    <li class="notice-list">
+                        <a href="">
+                            <div>
+                                <div class="notice-icon">
+                                    <p class="notice-p">공지</p>
+                                    <p class="notice-state">국립공주박물관 디지털 실감 영상관 운영안내</p>
+                                </div>
+                                
+                                <span>2024-04-08</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="notice-list">
+                        <a href="">
+                            <div>
+                                <div class="notice-icon">
+                                    <p class="notice-p">공지</p>
+                                    <p class="notice-state">국립경주박물관 교육 서포터즈 최종합격자 공고</p>
+                                </div>
+                                
+                                <span>2024-04-08</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="notice-list">
+                        <a href="">
+                            <div>
+                                <div class="notice-icon">
+                                    <p class="notice-p">공지</p>
+                                    <p class="notice-state">상설전시관 전시해설 미운영 안내</p>
+                                </div>
+                                
+                                <span>2024-04-08</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="notice-list">
+                        <a href="">
+                            <div>
+                                <div class="notice-icon">
+                                    <p class="notice-p">공지</p>
+                                    <p class="notice-state">2024년 국립제주박물관 아카데미 운영</p>
+                                </div>
+                                
+                                <span>2024-04-08</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="scholar">
+
+            </div>
+        </div>
+
+
+
+
+
     </div>
 
 
     <script>
-        // let depth1Btn1 =  document.querySelector(".depth1-btn1");
-        // let subMenu = document.querySelector(".sub-menu");
-        // depth1Btn1.addEventListener('mouseover', () => {
-        //     subMenu.style.display = "block";
+        let flag = false;
+        //버튼 눌리면 애니메이션 paused
+        document.querySelector(".pic-control").addEventListener("click", () => {
+            
+            let control = document.querySelectorAll(".main-pic-slide");
+            for(i = 0; i<control.length; i++){
+                control[i].classList.toggle("pic-paused");
+                
+            }
 
-        // });
-        // depth1Btn1.addEventListener('mouseleave', () => {
-        //     subMenu.style.display = "none";
-        // });
+            if(flag == false){
+                document.querySelector(".pic-control").innerHTML = '<img src="../integratedMuseum/images/main-pic/pause.png" alt="">';
+                flag = true;
+                
+            }
+            else{
+                document.querySelector(".pic-control").innerHTML = '<img src="../integratedMuseum/images/main-pic/play.png" alt="">';
+                flag = false;
+                
+            }
+
+            
+            
+        });
     </script>
 </body>
 
