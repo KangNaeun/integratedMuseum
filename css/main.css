@@ -4,12 +4,18 @@
     box-sizing: border-box;
 }
 
+
+
 .header {
     width: 100%;
     position: sticky;
-
-    background-color: white;
     top: 0;
+    z-index: 100;
+    /* right: 0;
+    bottom: 0;
+    left: 0; */
+    background-color: white;
+
 }
 
 .header-side {
@@ -43,7 +49,6 @@
 
 #header-logo {
     width: 350px;
-
     margin-left: 40px;
     vertical-align: middle;
 }
@@ -223,12 +228,6 @@
     animation-delay: -10s;
 }
 
-/* .main-pic-bottom {
-    position: absolute;
-    bottom: 20px;
-    right: 50px;
-    display: flex;
-} */
 
 .main-pic-div {
     width: 30px;
@@ -255,14 +254,16 @@
     right: 50px;
     width: 50px;
     height: 50px;
-    border-radius: 50%;
+    
     border: none;
     background-size: cover;
 
 }
 
 .notice-section {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
 }
 
 .notice {
@@ -270,9 +271,11 @@
     margin: 20px;
     margin-left: 40px;
     margin-top: 60px;
+
 }
 
-.notice>h3 {
+.notice>h3,
+.scholar>h3 {
     letter-spacing: -2px;
     color: #222222;
 }
@@ -302,23 +305,121 @@
 
 .notice-icon {
     display: flex;
-    
-    
+
+
 }
-.notice-p{
+
+.notice-p {
     width: 80px;
     letter-spacing: -2px;
     color: #fff;
     background-color: #222222;
-    border-radius: 13px; 
-    padding: 5px; 
-    
+    border-radius: 13px;
+    padding: 5px;
+
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.notice-state{
+.notice-state {
     margin-top: 5px;
     margin-left: 20px;
 }
+
+.scholar {
+    width: 50%;
+
+    position: relative;
+    margin-left: 40px;
+}
+
+.scholar>h3 {
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+
+.scholar-box {
+    width: 600px;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.scholar-outter {
+    margin: 0 auto;
+    position: relative;
+    width: 470px;
+    height: 450px;
+    overflow: hidden;
+}
+
+.scholar-inner {
+    /* width는 스크립트에서 계산 */
+    height: 450px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    position: relative;
+}
+
+.scholar-box>img {
+    width: 50%;
+    height: 90%;
+
+}
+
+.scholar-text {
+    width: 50%;
+    padding-left: 30px;
+}
+
+.scholar-text>p {
+
+    letter-spacing: -2px;
+}
+
+.scholar-text>p:nth-child(1) {
+    font-size: 1.2rem;
+    font-weight: bold;
+
+}
+
+.scholar-btn {
+    position: absolute;
+    bottom: 5%;
+    border: none;
+    background-color: transparent;
+}
+
+#btn-pre {
+    right: 35%;
+
+
+}
+
+#btn-next {
+    right: 5%;
+}
+
+.scholar-btn>img {
+    width: 50px;
+    height: 50px;
+}
+
+.video-section{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.video-section > h3 {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
