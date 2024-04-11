@@ -5,39 +5,110 @@
 }
 
 .login {
-    width: 500px;
+    width: 100%;
     margin: 0 auto;
     margin-top: 50px;
     text-align: center;
-
-    /* background-color: green; */
 }
 
-.login h2, .login h3{
+
+.login-location {
+    margin-bottom: 40px;
+}
+
+
+.login-process {
+    list-style: none;
+    display: flex;
+    margin-left: 30px;
+}
+
+.login-process img {
+    vertical-align: middle;
+}
+
+.login-list1>a>img {
+    width: 20px;
+}
+
+.login-list3>a {
+    vertical-align: middle;
+    text-decoration: none;
+    color: #727272;
+}
+
+
+.login-process li {
+    margin-right: 15px;
+}
+
+
+
+.login h2,
+.login h3 {
     font-weight: 500;
 }
 
-
-#id-input, #pw-input {
-    height: 50px;
-    padding: 5px;
-    
-    margin-top: 20px;        
+.login h2 {
+    margin-bottom: 30px;
 }
 
-#id-input, #pw-input,
-#btn-login, #btn-singnUp {
+.login-section {
     width: 60%;
+    margin: 0 auto;
+
+
+}
+
+.id-section,
+.pw-section {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.id-section>span,
+.pw-section>span {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+
+#id-input,
+#pw-input {
+    height: 50px;
+    padding: 5px;
+
+    margin-top: 20px;
+}
+
+#id-input,
+#pw-input {
+    width: 70%;
     height: 40px;
 }
 
-#id-input, #pw-input{
+#btn-login,
+#btn-singnUp {
+    width: 60%;
+    height: 40px;
+
+}
+
+#id-input,
+#pw-input {
     border-radius: 10px;
     border: 0.5px solid #727272;
 }
 
 
-#btn-login, #btn-singnUp{
+#btn-login,
+#btn-singnUp {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -47,25 +118,19 @@
     border-radius: 10px;
     background-color: #00205b;
     color: white;
-   
-  
+
+
 }
 
-.login-btns{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
 
 #btn-login {
-    /* height: 40px; */
-    margin-top: 30px;
-    
+    margin: 0 auto;
+    margin-top: 40px;
 }
 
-#btn-singnUp{
-    /* height: 40px; */
-    margin-top: 10px;
+#btn-singnUp {
+    margin: 0 auto;
+    margin-top: 20px;
 }
 
 h3 {
@@ -78,23 +143,23 @@ h3 {
     height: 50px;
     margin-right: 20px;
     border: 1px solid #727272;
-    object-fit:cover;
+    object-fit: cover;
 }
 
 
 
 .line {
-    width: 70%;
     border: 1px solid lightgray;
-    margin: 0 auto;
-    margin-top: 30px;
+    margin: 30px auto;
+
+    width: 80%;
 }
 
-.color-border{
-    outline:2px solid #0040b6;
+.color-border {
+    outline: 2px solid #0040b6;
 }
 
-.benefit{
+.benefit {
     margin: 100px auto;
     width: 60%;
     height: 200px;
@@ -102,19 +167,21 @@ h3 {
     padding: 30px;
 }
 
-.benefit>strong{
+.benefit>strong {
     letter-spacing: -2px;
-    
+
 }
-.benefit-text{
+
+.benefit-text {
     margin-top: 20px;
 }
-.benefit-text>li::before{
+
+.benefit-text>li::before {
     content: "* ";
 }
 
-.benefit-text>li{
-    list-style-type : none;
+.benefit-text>li {
+    list-style-type: none;
     margin-top: 15px;
     letter-spacing: -2px;
 }

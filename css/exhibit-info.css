@@ -1,0 +1,132 @@
+.intro-area{
+    width: 100%;
+    margin: 0 auto;
+
+    height: 3000px;
+}
+
+
+
+
+.intro-img{
+    width: 100%;
+   
+    position: relative;
+    transition-property: all;
+    transition-duration: 1s;
+    opacity: 0;
+    top: 100px;
+}
+
+.intro-img > img{
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.introduce{
+    position: absolute;
+    right: 5%;
+    top:350px;
+    letter-spacing: -2px;
+    font-size: 1.6rem;
+    text-align: right;
+    line-height: 200%;
+}
+
+.introduce > strong{
+    font-size: 1.7rem;
+}
+
+
+.intro-img2{
+    width: 60%;
+   
+
+
+    transition-property: all;
+    transition-duration: 1s;
+    transition-delay: 1s;
+    opacity: 0;
+    top: 100px;
+}
+
+.introduce2, .introduce3, .introduce5{
+    width: 100%;
+    letter-spacing: -2px;
+    font-size: 1.4rem;
+    text-align: left;
+    line-height: 160%;
+
+    padding-left: 30px;
+    margin-top: 20px;
+}
+.introduce4, .introduce6{
+    width: 100%;
+    letter-spacing: -2px;
+    font-size: 1.4rem;
+    text-align: right;
+    line-height: 160%;
+
+    padding-right: 30px;
+    margin-top: 20px;
+}
+.intro-img3{
+    width: 100%;
+    text-align: right;
+    position: relative;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-delay: 1.5s;
+    opacity: 0;
+    top: 100px;
+    
+}
+
+.intro-img3 > img{
+    height: 400px;
+   width: 80%;
+   margin-top: 30px;
+   object-fit: cover;
+}
+
+.intro-img4{
+    width: 100%;
+    text-align: left;
+    position: relative;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-delay: 2s;
+    opacity: 0;
+    top: 100px;
+}
+
+
+.intro-img4 > img{
+    height: 400px;
+    width: 80%;
+    margin-top: 50px;
+    object-fit: cover;
+}
+
+.intro-img5{
+    width: 100%;
+    text-align: right;
+    position: relative;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-delay: 3s;
+    opacity: 0;
+    top: 100px;
+}
+
+.intro-img5 > img{
+    height: 400px;
+    width: 80%;
+    margin-top: 50px;
+    object-fit: cover;
+}
+
+
+
+
