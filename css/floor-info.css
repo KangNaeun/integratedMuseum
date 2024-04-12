@@ -1,0 +1,118 @@
+.floor-area {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.floor-list {
+    width: 60%;
+    list-style: none;
+    margin: 20px 0;
+    display: flex;
+}
+
+.floor-list li {
+    width: 20%;
+    height: 40px;
+    margin-right: 5px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #555555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+
+.floor-name {
+    color: #555555;
+    font-size: 1.7rem;
+}
+
+.floor-info {
+    width: 90%;
+    height: 400px;
+    margin: 80px auto;
+}
+
+.floor-img {
+    list-style-type: none;
+
+    display: flex;
+
+
+}
+
+.floor-pic {
+    width: 70%;
+}
+
+.floor-pic img {
+    width: 100%;
+   height: 350px;
+    object-fit: contain;
+}
+
+.floor-text {
+    width: 30%;
+
+    margin-left: 40px;
+
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    align-content: center;
+
+}
+
+.floor-text p {
+    width: 100%;
+
+
+    font-size: 1.5rem;
+    letter-spacing: -1px;
+
+}
+
+.floor-text-small{
+    margin-top: 15px;
+}
+.floor-text-small p{
+    color: #555555;
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.floor-text-area {
+    background-color: #f8f8f8;
+    padding: 30px 20px;
+}
+
+.floor {
+    display: none;
+
+}
+
+
+.floor-block {
+    display: block;
+}
+
+.floor-area > .floor-list > li:hover {
+    border-bottom: 5px solid #1a1a1a;
+}
+
+.floor-list li:hover .floor-name {
+    color: #1a1a1a;
+    font-weight: bold;
+}
+
+.floor-list > .font-before{
+    border-bottom: 5px solid #1a1a1a;
+}
+
+.font-after {
+  
+    color: #1a1a1a;
+    font-weight: bold;
+}

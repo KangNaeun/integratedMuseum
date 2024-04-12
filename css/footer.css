@@ -92,7 +92,7 @@
 
 #footer-logo {
     width: 25%;
-    /* height: 70px; */
+    height: 70px;
     object-fit: cover;
 
     margin-left: 20px;

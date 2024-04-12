@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* .body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.signUp {
+    width: 60%;
+    margin: 100px auto;
+    text-align: center;
+
+    /* background-color: green; */
+}
+
+.signUp p {
+    width: 35%;
+    letter-spacing: -2px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.require-info input {
+    width: 65%;
+    height: 30px;
+    padding: 5px;
+}
+
+.require-info {
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.gender{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+}
+
+
+
+.number {
+    width: 65%;
+}
+
+#number1,
+#number2,
+#number3 {
+    width: 27%;
+}
+
+
+
+.name-info,
+.id_info,
+.passWord-info,
+.passCheck-info,
+.phone {
+   
+    width: 80%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    /* margin-right: 20px; */
+}
+
+
+.add-info,
+.birthDay-info {
+    /* width: 80%; */
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+
+    flex-wrap: wrap;
+}
+
+
+#name, #id, #passWord, #passWordCheck,
+#number1, #number2, #number3, #day{
+    border: 1px solid #d1d1d1;
+    border-width: 0 0 1px 0;
+    /* border-radius: 3px; */
+}
+
+
+#name:focus, #id:focus, #passWord:focus, #passWordCheck:focus,
+#number1:focus, #number2:focus, #number3:focus,
+#day:focus, .birthDay-select > select:hover {
+    outline: none;
+    border-color: #196dff;
+}
+
+.birthDay-select > select{
+    outline: none;
+    border: 1px solid #d1d1d1;
+    border-width: 0 0 1px 0;
+}
+
+
+
+.gender-radio>label {
+    margin-right: 20px;
+}
+
+.gender-radio {
+    width: 65%;
+    display: flex;
+    justify-content: left;
+}
+
+h2, h3{
+    letter-spacing: -2px;
+    font-weight: 500;
+}
+
+h3 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.birthDay-info {
+    margin-top: 20px;
+}
+
+#day {
+    margin-left: 30px;
+    width: 50px;
+    text-align: right;
+    
+}
+
+
+.birthDay-select {
+    margin-right: 40px;
+}
+
+#btn-sign {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(131, 131, 131);
+    border: none;
+    letter-spacing: 5px;
+    font-size: 1.2rem;
+}

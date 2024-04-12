@@ -5,7 +5,7 @@
 }
 
 .login {
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
     margin-top: 50px;
     text-align: center;
@@ -20,7 +20,6 @@
 .login-process {
     list-style: none;
     display: flex;
-    margin-left: 30px;
 }
 
 .login-process img {
@@ -47,6 +46,7 @@
 .login h2,
 .login h3 {
     font-weight: 500;
+    letter-spacing: -2px;
 }
 
 .login h2 {
@@ -62,7 +62,7 @@
 
 .id-section,
 .pw-section {
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -75,40 +75,35 @@
     flex-wrap: wrap;
     align-items: center;
     margin-top: 10px;
+    letter-spacing: -2px;
 }
 
 
 
-#id-input,
-#pw-input {
-    height: 50px;
-    padding: 5px;
 
-    margin-top: 20px;
-}
 
 #id-input,
 #pw-input {
     width: 70%;
     height: 40px;
+    margin-top: 20px;
+   letter-spacing: -1px;
 }
 
-#btn-login,
-#btn-singnUp {
-    width: 60%;
+#btn-login{
+    width: 50%;
     height: 40px;
 
 }
 
 #id-input,
 #pw-input {
-    border-radius: 10px;
-    border: 0.5px solid #727272;
+   
+    border-width: 0 0 1px 0;
 }
 
 
-#btn-login,
-#btn-singnUp {
+#btn-login {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -116,7 +111,7 @@
     text-decoration: none;
     border: none;
     border-radius: 10px;
-    background-color: #00205b;
+    background-color: #196dff;
     color: white;
 
 
@@ -128,10 +123,23 @@
     margin-top: 40px;
 }
 
-#btn-singnUp {
+.login-text{
+    width: 50%;
+   
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
 }
+
+.login-text > a {
+    text-decoration: none;
+    color: #727272;
+    font-size: 0.9rem;
+    letter-spacing: -2px;
+}
+
+
 
 h3 {
     margin-top: 10px;
@@ -156,7 +164,8 @@ h3 {
 }
 
 .color-border {
-    outline: 2px solid #0040b6;
+    border-radius: 4px;
+    outline: 2px solid #196dff;
 }
 
 .benefit {

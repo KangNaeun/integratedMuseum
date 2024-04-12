@@ -269,8 +269,8 @@
 
 .exhibit-outter {
     width: 90%;
-    margin: 0 auto;
-    margin-top: 40px;
+    margin: 60px auto;
+   
     /* background-color: lightgray; */
     overflow: hidden;
     position: relative;
@@ -289,9 +289,13 @@
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    animation-delay: 1s;
 }
 
 @keyframes exhibit-ani {
+    0%{
+        transform: translateX(0);
+    }
     25% {
         transform: translateX(-290px);
     }
@@ -320,7 +324,7 @@
 .exhibit>a>img {
     width: 100%;
     height: 400px;
-
+    object-fit: cover;
 }
 
 .exhibit a {
@@ -338,7 +342,8 @@
 .exhibit span {
     color: #222222;
     border: 1px solid #222222;
-    padding: 2px;
+    padding: 2px 7px;
+    
     letter-spacing: -2px;
 
 
@@ -401,7 +406,7 @@
 
 .notice-section {
     width: 90%;
-    margin: 0 auto;
+    margin: 40px auto;
     display: flex;
 }
 
@@ -551,8 +556,8 @@
 
 .video-section {
     width: 90%;
-    margin: 0 auto;
-    margin-top: 40px;
+    margin: 100px auto;
+  
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -578,7 +583,7 @@
 }
 
 .open-info>strong {
-    color: #3f0b9f;
+    color: #0e35be;
     font-size: 1.5rem;
 
 }
