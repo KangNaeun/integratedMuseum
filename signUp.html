@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>로그인</title>
+    <title>회원가입</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/login.css">
@@ -135,45 +135,62 @@
 
         <div class="signUp"> <!-- 회원가입 전체 바디-->
 
-            <h2>회원가입</h2>
+            
+            <form action="./main.html">
+                <h2>회원가입</h2>
+                <div class="require-info"> <!-- 필수정보 -->
 
-            <div class="require-info"> <!-- 필수정보 -->
-
-                <div class="name-info">
-                    <p>이름</p>
-                    <input type="text" id="name" placeholder="아이디를 입력해주세요." required>
-                </div>
-
-                <div class="id_info">
-                    <p>아이디</p>
-                    <input type="text" id="id" placeholder="아이디를 입력해주세요." required>
-                </div>
-
-                <div class="passWord-info">
-                    <p>비밀번호</p>
-                    <input type="text" id="passWord" placeholder="비밀번호를 입력해주세요." required>
-                </div>
-
-                <div class="passCheck-info">
-                    <p>비밀번호 확인</p>
-                    <input type="text" id="passWordCheck" placeholder="비밀번호와 동일하게 입력해주세요." required>
-                </div>
-
-                <div class="phone">
-                    <p>휴대폰 번호</p>
-                    <div class="number">
-                        <input type="text" id="number1" required maxlength="3">
-                        <span>-</span>
-                        <input type="text" id="number2" required maxlength="4">
-                        <span>-</span>
-                        <input type="text" id="number3" required maxlength="4">
+                    <div class="name-info">
+                        <span>*</span>
+                        <p>이름</p>
+                        <input type="text" id="name" placeholder="아이디를 입력해주세요." required>
                     </div>
+    
+                    <div class="id_info">
+                        <span>*</span>
+                        <p>아이디</p>
+                        <input type="text" id="id" placeholder="아이디를 입력해주세요." required>
+                    </div>
+    
+                    <div class="passWord-info">
+                        <span>*</span>
+                        <p>비밀번호</p>
+                        <input type="text" id="passWord" placeholder="비밀번호를 입력해주세요." required>
+                    </div>
+    
+                    <div class="passCheck-info">
+                        <span>*</span>
+                        <p>비밀번호 확인</p>
+                        <input type="text" id="passWordCheck" placeholder="비밀번호와 동일하게 입력해주세요." required>
+                    </div>
+
+                    <div class="email-info">
+                        <span>*</span>
+                        <p>이메일</p>
+                        <input type="email" id="email" placeholder="이메일을 입력해주세요." required>
+                    </div>
+    
+                    <div class="phone">
+                        <span>*</span>
+                        <p>휴대폰 번호</p>
+                        <div class="number">
+                            <input type="text" id="number1" required maxlength="3">
+                            <span>-</span>
+                            <input type="text" id="number2" required maxlength="4">
+                            <span>-</span>
+                            <input type="text" id="number3" required maxlength="4">
+                        </div>
+                        
+                    </div>
+
+                    <p class="require-sentence">* 은 필수 입력정보입니다.</p>
+
+                    
+    
                 </div>
 
 
-            </div>
-
-            <h3>추가정보</h3>
+                <h3>추가정보</h3>
 
             <div class="add-info"> <!-- 추가 정보-->
 
@@ -221,6 +238,10 @@
 
 
             </div>
+            </form>
+            
+
+            
         </div>
     <!-- 회원가입 끝 -->
 

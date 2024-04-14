@@ -14,38 +14,98 @@
 
         .outter {
             border: 1px solid red;
-            width: 210px;
+            width: 50px;
             height: 50px;
 
-            
+            position: relative;
         }
+
+        /* .box {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top:0;
+            left: 0;
+            
+            border: 1px solid black;
+            animation-name: slide;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-fill-mode: backwards;
+            opacity: 0;
+           
+        }
+*/
+/*
+
+        .outter div:nth-child(1){
+            background-color: red;
+            animation-delay: 0;
+        }
+
+        .outter div:nth-child(2){
+            background-color: orange;
+            animation-delay: 1s;
+        }
+
+
+        .outter div:nth-child(3){
+            background-color: yellow;
+            animation-delay: 2s;
+        }
+*//*
+        .outter div:nth-child(4){
+            background-color: green;
+            animation-delay: 3s;
+        } */
+
+        /* .outter:nth-child(5){
+            animation-delay: 8s;
+        }
+
+        .outter:nth-child(6){
+            animation-delay: 10s;
+        } */
+
+
 
         .box {
             width: 50px;
             height: 50px;
-            background-color: blanchedalmond;
-            border: 1px solid black;
-           
-        }
-
-        .inner {
-            width: 300px;
-            display: flex;
-            justify-content: center;
-            /* flex-wrap: wrap; */
-            position: relative;
             
             animation-name: slide;
             animation-duration: 5s;
             animation-iteration-count: infinite;
             animation-direction: alternate;
+            animation-fill-mode: forwards;
+            /* background-color: aqua; */
+            
+            background-image: url("images/로그인_구글.png");
+            animation-delay: 1s;
+            animation-timing-function: ease;
         }
 
+
+
+       
+
         @keyframes slide {
-            0%{}
-            50%{transform: translateX(-50px);}
+            0%{
+               /* background-color: red; */
+              
+               background-image: url("images/로그인_구글.png");
+            }
+           50%{
+            /* background-color: orange; */
+            background-image: url("images/로그인_애플.png");
+           }
+          
             
-            100%{transform: translateX(-100px);}
+            100%{
+             /* background-color: green; */
+             background-image: url("images/로그인_카카오톡.png");
+            }
 
         }
 
@@ -56,14 +116,14 @@
 <body>
     <div class="outter">
 
-        <div class="inner">
-            <div class="box">1</div>
-            <div class="box">2</div>
-            <div class="box">3</div>
-            <div class="box">4</div>
-            <div class="box">5</div>
-            <div class="box">6</div>
-        </div>
+       
+            <div class="box box1">1</div>
+            <!-- <div class="box box2">2</div>
+            <div class="box box3">3</div>
+            <div class="box box4">4</div> -->
+            <!-- <div class="box">5</div>
+            <div class="box">6</div> -->
+        
 
     </div>
 

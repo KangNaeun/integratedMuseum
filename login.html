@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>로그인</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/login.css">
@@ -131,29 +131,31 @@
 
 
         <h2>로그인</h2>
-
-        <div class="login-section">
-            <div class="id-section">
-                <span>아이디</span>
-                <input type="text" id="id-input" placeholder="아이디를 입력해주세요." required>
+        <form action="./main.html">
+            <div class="login-section">
+                <div class="id-section">
+                    <span>아이디</span>
+                    <input type="text" id="id-input" placeholder="아이디를 입력해주세요." required>
+                </div>
+    
+                <div class="pw-section">
+                    <span>비밀번호</span>
+                    <input type="text" id="pw-input" placeholder="패스워드를 입력해주세요." required>
+    
+                </div>
+    
+                <div class="login-btns">
+                    <button id="btn-login">로그인</button>
+                </div>
+                
+                <div class="login-text">
+                    <a href="./signUp.html">회원가입</a>
+                    <a href="">아이디/비밀번호 찾기</a>
+                </div>
             </div>
-
-            <div class="pw-section">
-                <span>비밀번호</span>
-                <input type="text" id="pw-input" placeholder="패스워드를 입력해주세요." required>
-
-            </div>
-
-            <div class="login-btns">
-                <a id="btn-login" href="./main.html">로그인</a>
-            </div>
-            
-            <div class="login-text">
-                <a href="./signUp.html">회원가입</a>
-                <a href="">아이디/비밀번호 찾기</a>
-            </div>
-        </div>
-
+    
+        </form>
+        
 
 
 

@@ -104,6 +104,8 @@
 
 
 #btn-login {
+    margin: 0 auto;
+    margin-top: 40px;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -114,14 +116,13 @@
     background-color: #196dff;
     color: white;
 
+    cursor: pointer;
+
 
 }
 
 
-#btn-login {
-    margin: 0 auto;
-    margin-top: 40px;
-}
+
 
 .login-text{
     width: 50%;
@@ -150,11 +151,9 @@ h3 {
     width: 50px;
     height: 50px;
     margin-right: 20px;
-    border: 1px solid #727272;
+   
     object-fit: cover;
 }
-
-
 
 .line {
     border: 1px solid lightgray;

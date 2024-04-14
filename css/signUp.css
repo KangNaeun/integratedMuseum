@@ -28,6 +28,20 @@
     align-items: center;
 }
 
+.signUp .require-sentence{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+    color: #ff3f3f;
+    letter-spacing: -3px;
+    font-size: 0.9rem;
+}
+
+
+.require-info span:not(.number span){
+    color: #ff3f3f;
+}
+
 .require-info input {
     width: 65%;
     height: 30px;
@@ -36,6 +50,7 @@
 
 .require-info {
 
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -43,6 +58,7 @@
 
 .gender{
     width: 100%;
+    margin: 20px 0;
     display: flex;
     justify-content: left;
 }
@@ -56,7 +72,7 @@
 #number1,
 #number2,
 #number3 {
-    width: 27%;
+    width: 30%;
 }
 
 
@@ -65,30 +81,31 @@
 .id_info,
 .passWord-info,
 .passCheck-info,
-.phone {
+.phone,
+.email-info {
    
     width: 80%;
-    margin-top: 30px;
+    margin: 0 auto;
+    margin-top: 40px;
     display: flex;
     justify-content: space-between;
     /* margin-right: 20px; */
 }
 
 
-.add-info,
-.birthDay-info {
-    /* width: 80%; */
+.add-info{
+    width: 80%;
     margin: 0 auto;
 
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 
     flex-wrap: wrap;
 }
 
 
 #name, #id, #passWord, #passWordCheck,
-#number1, #number2, #number3, #day{
+#number1, #number2, #number3, #day, #email{
     border: 1px solid #d1d1d1;
     border-width: 0 0 1px 0;
     /* border-radius: 3px; */
@@ -97,13 +114,19 @@
 
 #name:focus, #id:focus, #passWord:focus, #passWordCheck:focus,
 #number1:focus, #number2:focus, #number3:focus,
-#day:focus, .birthDay-select > select:hover {
+#day:focus, #email:hover, .birthDay-select > select:hover {
     outline: none;
+    border-width: 0 0 2px 0;
     border-color: #196dff;
 }
 
 .birthDay-select > select{
     outline: none;
+
+    width: 25%;
+    height: 40px;
+    font-size: 0.9rem;
+    text-align: right;
     border: 1px solid #d1d1d1;
     border-width: 0 0 1px 0;
 }
@@ -112,6 +135,7 @@
 
 .gender-radio>label {
     margin-right: 20px;
+    
 }
 
 .gender-radio {
@@ -125,34 +149,65 @@ h2, h3{
     font-weight: 500;
 }
 
+h2{
+    margin: 20px 0;
+}
+
 h3 {
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin: 30px 0;
 }
 
 .birthDay-info {
-    margin-top: 20px;
+   
+    width: 100%;
+
+    
+    /* margin: 0 auto; */
+   margin: 10px auto;
+    display: flex;
+    justify-content: left;
+
+    flex-wrap: wrap;
 }
 
 #day {
+    width: 25%;
+    height: 40px;
     margin-left: 30px;
-    width: 50px;
+    /* width: 50px; */
     text-align: right;
     
 }
 
 
 .birthDay-select {
-    margin-right: 40px;
+    /* margin-right: 40px; */
+    width: 65%;
+    display: flex;
+    justify-content: left;
+}
+
+.birthDay-select span{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
 }
 
 #btn-sign {
     margin-top: 30px;
     margin-bottom: 50px;
+
     width: 100%;
     height: 50px;
-    background-color: rgb(131, 131, 131);
+
+    background-color: #196dff;
+    color: white;
+
+    border-radius: 10px;
     border: none;
+
     letter-spacing: 5px;
     font-size: 1.2rem;
+
+    cursor: pointer;
 }
