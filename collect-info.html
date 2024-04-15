@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/collect-info.css">
+</head>
+
+<body>
+    <div class="header"> <!-- 사이트 헤더 -->
+        <div class="header-side"> <!--맨 위 sns & 로그인 & 회원가입-->
+            <a href=""><img src="images/footerImages/ico_facebook.png" alt=""></a>
+            <a href=""><img src="images/footerImages/ico_insta.png" alt=""></a>
+            <a href=""><img src="images/footerImages/ico_tw.png" alt=""></a>
+            <a href=""><img src="images/footerImages/ico_youtube.png" alt=""></a>
+            <a href="./login.html" id="head-login">로그인</a>
+            <a href="./signUp.html" id="head-signup">회원가입</a>
+        </div>
+
+        <div class="header-nav"> <!-- 로고 & 네비게이션 바-->
+            <a href="./main.html"><img src="images/국립중앙박물관_컬러로고.png" alt="" id="header-logo"></a>
+            <ul class="depth1">
+                <li>
+                    <a href="" class="depth1-btn">관람정보</a>
+                    <div class="sub-menu">
+                        <ul class="depth2">
+                            <li><a href="">관람안내</a></li>
+                            <li><a href="">관람해설</a></li>
+                            <li><a href="">시설안내</a></li>
+                            <li><a href="">오시는 길</a></li>
+                            <li><a href="">접근성 안내</a></li>
+                            <li><a href="./museum-info.html">박물관 소개</a></li>
+                            <li><a href="./floor-info.html">층별 안내</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="" class="depth1-btn">전시</a>
+                    <div class="sub-menu">
+                        <ul class="depth2">
+                            <li><a href="">상설전시</a></li>
+                            <li><a href="">특별전시</a></li>
+                            <li><a href="">옥외전시</a></li>
+                            <li><a href="">온라인 전시관</a></li>
+                            <li><a href="">디지털 실감 상영관</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="" class="depth1-btn">교육</a>
+                    <div class="sub-menu">
+                        <ul class="depth2">
+                            <li><a href="">교육/행사 소식</a></li>
+                            <li><a href="">교육프로그램</a></li>
+                            <li><a href="">문화행사</a></li>
+                            <li><a href="">교육자료실</a></li>
+                            <li><a href="">자원봉사</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="" class="depth1-btn">학술정보</a>
+                    <div class="sub-menu">
+                        <ul class="depth2">
+                            <li><a href="">학술행사</a></li>
+                            <li><a href="">발간자료</a></li>
+                            <li><a href="">보존과학</a></li>
+                            <li><a href="">도서관</a></li>
+                            <li><a href="">고고학</a></li>
+                            <li><a href="">역사학</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="" class="depth1-btn">소장품</a>
+                    <div class="sub-menu">
+                        <ul class="depth2">
+                            <li><a href="">소장품 검색</a></li>
+                            <li><a href="">국보·보물</a></li>
+                            <li><a href="">기증</a></li>
+                            <li><a href="./collect-info.html">큐레이터 추천 소장품</a></li>
+                            <li><a href="">소장품 대여안내</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="" class="depth1-btn">소속박물관 소개</a>
+                    <div class="sub-menu">
+                        <ul class="depth2">
+                            <li><a href="">국립중앙박물관</a></li>
+                            <li><a href="">국립경주박물관</a></li>
+                            <li><a href="">국립공주박물관</a></li>
+                            <li><a href="">국립나주박물관</a></li>
+                            <li><a href="">국립부여박물관</a></li>
+                            <li><a href="">국립익산박물관</a></li>
+                            <li><a href="">국립춘천박물관</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a href=""><img src="images/헤더_검색.png" alt=""></a>
+                </li>
+            </ul>
+
+        </div>
+    </div> <!--헤더, 네비게이션 바 끝-->
+
+    <div class="login">
+        <div class="login-location">
+            <ul class="login-process">
+                <li class="login-list1"><a href="./main.html"><img src="./images/홈아이콘.png" alt="홈"></a></li>
+                <li class="login-list2"><img src="./images/로그인화살표.png" alt=""></li>
+                <li class="login-list3"><a href="./main.html">소장품</a></li>
+                <li class="login-list2"><img src="./images/로그인화살표.png" alt=""></li>
+                <li class="login-list3"><a href="./collect-info.html">큐레이터 추천 소장품</a></li>
+
+            </ul>
+        </div>
+    </div>
+
+
+
+    <div class="collect-area"> <!-- 소장품 -->
+
+        <ul class="collection-list">
+            <li>
+                <div class="collection">
+                    <img src="./images/collect/각진병.jpg" alt="">
+                    <div class="collect-text-area">
+                        <p>각진 병</p>
+                        <ul class="collect-text">
+                            <li>
+                                <strong>소속</strong>
+                                <p>국립공주박물관</p>
+                            </li>
+                            <li>
+                                <strong>국적/시대</strong>
+                                <p>한국 고려</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <!--1번 소장품-->
+
+            <li>
+                <div class="collection">
+                    <img src="./images/collect/감로도.jpg" alt="">
+                    <div class="collect-text-area">
+                        <p>따뜻한 위로를 건네는 불화 - <감로도>
+                        </p>
+                        <ul class="collect-text">
+                            <li>
+                                <strong>소속</strong>
+                                <p>국립중앙박물관</p>
+                            </li>
+                            <li>
+                                <strong>국적/시대</strong>
+                                <p>조선 (1649년)</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <!--2번 소장품-->
+
+            <li>
+                <div class="collection">
+                    <img src="./images/collect/금관.jpg" alt="">
+                    <div class="collect-text-area">
+                        <p>금관 (金冠)</p>
+                        <ul class="collect-text">
+                            <li>
+                                <strong>소속</strong>
+                                <p>국립청주박물관</p>
+                            </li>
+                            <li>
+                                <strong>국적/시대</strong>
+                                <p>삼국시대(신라)</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <!--3번 소장품-->
+
+            <li>
+                <div class="collection">
+                    <img src="./images/collect/수막새.jpg" alt="">
+                    <div class="collect-text-area">
+                        <p>국화무늬 수막새</p>
+                        <ul class="collect-text">
+                            <li>
+                                <strong>소속</strong>
+                                <p>국립공주박물관</p>
+                            </li>
+                            <li>
+                                <strong>국적/시대</strong>
+                                <p>한국 신라</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <!--4번 소장품-->
+
+            <li>
+                <div class="collection">
+                    <img src="./images/collect/윤봉길의사선언문유서.jpg" alt="">
+                    <div class="collect-text-area">
+                        <p>윤봉길 의사 선서문과 유서</p>
+                        <ul class="collect-text">
+                            <li>
+                                <strong>소속</strong>
+                                <p>국립중앙박물관</p>
+                            </li>
+                            <li>
+                                <strong>국적/시대</strong>
+                                <p>일제강점기(1932년)</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <!--5번 소장품-->
+
+            <li>
+                <div class="collection">
+                    <img src="./images/collect/은잔.jpg" alt="">
+                    <div class="collect-text-area">
+                        <p>백제 무령왕릉에서 출토된 받침 있는 은잔[銅托銀盞]</p>
+                        <ul class="collect-text">
+                            <li>
+                                <strong>소속</strong>
+                                <p>국립중앙박물관</p>
+                            </li>
+                            <li>
+                                <strong>국적/시대</strong>
+                                <p>백제 (529년 이전)</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <!--6번 소장품-->
+
+            <li>
+                <div class="collection">
+                    <img src="./images/collect/청동금고.jpg" alt="">
+                    <div class="collect-text-area">
+                        <p>'의림사'를 새긴 청동 금고</p>
+                        <ul class="collect-text">
+                            <li>
+                                <strong>소속</strong>
+                                <p>국립청주박물관</p>
+                            </li>
+                            <li>
+                                <strong>국적/시대</strong>
+                                <p>한국 고려</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <!--7번 소장품-->
+
+            <li>
+                <div class="collection">
+                    <img src="./images/collect/민무늬토기.jpg" alt="">
+                    <div class="collect-text-area">
+                        <p>휴암리유적 민무늬 토기·골아가리 토기</p>
+                        <ul class="collect-text">
+                            <li>
+                                <strong>소속</strong>
+                                <p>국립부여박물관</p>
+                            </li>
+                            <li>
+                                <strong>국적/시대</strong>
+                                <p>한국 청동기</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <!--8번 소장품-->
+        </ul>
+    </div> <!--소장품 끝-->
+
+    <div class="popup-area"> <!--소장품 팝업 영억-->
+        <div class="popup-box"> <!--팝업 박스 내부 영역-->
+            <button class="popup-control"><img src="./images/팝업닫기.png" alt=""></button>
+            
+            <div class="popup-inner">
+                <h3>각진 병</h3>
+                <div class="popup-wrap">
+                    <img src="./images/collect/각진병.jpg" alt="">
+                    <ul>
+                        <li>
+                            <strong>· 명칭</strong>
+                            <p>각진 병</p>
+                        </li>
+
+                        <li>
+                            <strong>· 국적/시대</strong>
+                            <p>한국 고려</p>
+                        </li>
+
+                        <li>
+                            <strong>· 재질</strong>
+                            <p>토제 - 경질</p>
+                        </li>
+
+                        <li>
+                            <strong>· 분류</strong>
+                            <p>식 - 음식기 - 음식</p>
+                        </li>
+
+                        <li>
+                            <strong>· 크기</strong>
+                            <p>높이 24cm, 입지름 6.3cm</p>
+                        </li>
+
+                        <li>
+                            <strong>· 소속</strong>
+                            <p>국립공주박물관</p>
+                        </li>
+                    </ul>
+                </div><!--여기부터!!!!-->
+                
+            </div>
+            <!--1번 팝업 내용-->
+
+            <div class="popup-inner">
+                <h3>따뜻한 위로를 건네는 불화 - <감로도></h3>
+                <div class="popup-wrap">
+                    <img src="./images/collect/감로도.jpg" alt="">
+                    <ul>
+                        <li>
+                            <strong>· 명칭</strong>
+                            <p>감로도(甘露圖)</p>
+                        </li>
+
+                        <li>
+                            <strong>· 국적/시대</strong>
+                            <p>조선 (1649년)</p>
+                        </li>
+
+                        <li>
+                            <strong>· 재질</strong>
+                            <p>섬유</p>
+                        </li>
+
+                        <li>
+                            <strong>· 분류</strong>
+                            <p>종교신앙 - 불교 - 예배 - 불화</p>
+                        </li>
+
+                        <li>
+                            <strong>· 크기</strong>
+                            <p>가로 220cm, 세로 235cm</p>
+                        </li>
+
+                        <li>
+                            <strong>· 소속</strong>
+                            <p>국립중앙박물관</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--2번 팝업 내용-->
+
+            <div class="popup-inner">
+                <h3>금관 (金冠)</h3>
+                <div class="popup-wrap">
+                    <img src="./images/collect/금관.jpg" alt="">
+                    <ul>
+                        <li>
+                            <strong>· 명칭</strong>
+                            <p>금관</p>
+                        </li>
+
+                        <li>
+                            <strong>· 국적/시대</strong>
+                            <p>한국 - 삼국시대(신라)</p>
+                        </li>
+
+                        <li>
+                            <strong>· 재질</strong>
+                            <p>금속 - 금</p>
+                        </li>
+
+                        <li>
+                            <strong>· 분류</strong>
+                            <p>금관</p>
+                        </li>
+
+                        <li>
+                            <strong>· 크기</strong>
+                            <p>높이 35cm</p>
+                        </li>
+
+                        <li>
+                            <strong>· 소속</strong>
+                            <p>국립청주박물관</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--3번 팝업 내용-->
+
+            <div class="popup-inner">
+                <h3>국화무늬 수막새</h3>
+                <div class="popup-wrap">
+                    <img src="./images/collect/수막새.jpg" alt="">
+                    <ul>
+                        <li>
+                            <strong>· 명칭</strong>
+                            <p>국화무늬 수막새</p>
+                        </li>
+
+                        <li>
+                            <strong>· 국적/시대</strong>
+                            <p>한국 - 삼국시대(신라)</p>
+                        </li>
+
+                        <li>
+                            <strong>· 재질</strong>
+                            <p>토제 - 연질</p>
+                        </li>
+
+                        <li>
+                            <strong>· 분류</strong>
+                            <p>주 건축부재 지붕재</p>
+                        </li>
+
+                        <li>
+                            <strong>· 크기</strong>
+                            <p>지름 14.5cm</p>
+                        </li>
+
+                        <li>
+                            <strong>· 소속</strong>
+                            <p>국립공주박물관</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--4번 팝업 내용-->
+
+            <div class="popup-inner">
+                <h3>윤봉길 의사 선서문과 유서<br>-한결같은 마음[赤誠]으로 나라의 독립을 기원하다</h3>
+                <div class="popup-wrap">
+                    <img src="./images/collect/윤봉길의사선언문유서.jpg" alt="">
+                    <ul>
+                        <li>
+                            <strong>· 명칭</strong>
+                            <p>윤봉길의사 선서문</p>
+                        </li>
+
+                        <li>
+                            <strong>· 국적/시대</strong>
+                            <p>한국 - 일제강점</p>
+                        </li>
+
+                        <li>
+                            <strong>· 재질</strong>
+                            <p>종이</p>
+                        </li>
+
+                        <li>
+                            <strong>· 분류</strong>
+                            <p>사회생활 - 사회운동 - 독립운동</p>
+                        </li>
+
+                        <li>
+                            <strong>· 크기</strong>
+                            <p>세로 26.9cm, 가로 21.3cm</p>
+                        </li>
+
+                        <li>
+                            <strong>· 소속</strong>
+                            <p>국립중앙박물관</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--5번 팝업 내용-->
+
+            <div class="popup-inner">
+                <h3>백제 무령왕릉에서 출토된 받침 있는 은잔[銅托銀盞]</h3>
+                <div class="popup-wrap">
+                    <img src="./images/collect/은잔.jpg" alt="">
+                    <ul>
+                        <li>
+                            <strong>· 명칭</strong>
+                            <p>받침 있는 은잔</p>
+                        </li>
+
+                        <li>
+                            <strong>· 국적/시대</strong>
+                            <p>백제(529년 이전)</p>
+                        </li>
+
+                        <li>
+                            <strong>· 재질</strong>
+                            <p>종이</p>
+                        </li>
+
+                        <li>
+                            <strong>· 분류</strong>
+                            <p>식 - 음식기 - 음식</p>
+                        </li>
+
+                        <li>
+                            <strong>· 크기</strong>
+                            <p>전체 높이 12.1㎝, 전체 너비 14.7㎝</p>
+                        </li>
+
+                        <li>
+                            <strong>· 소속</strong>
+                            <p>국립중앙박물관</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--6번 팝업 내용-->
+
+            <div class="popup-inner">
+                <h3>‘의림사’를 새긴 청동 금고 (義林寺銘靑銅金鼓)</h3>
+                <div class="popup-wrap">
+                    <img src="./images/collect/청동금고.jpg" alt="">
+                    <ul>
+                        <li>
+                            <strong>· 명칭</strong>
+                            <p>청동 금고</p>
+                        </li>
+
+                        <li>
+                            <strong>· 국적/시대</strong>
+                            <p>한국 - 고려 1190년</p>
+                        </li>
+
+                        <li>
+                            <strong>· 재질</strong>
+                            <p>청동</p>
+                        </li>
+
+                        <li>
+                            <strong>· 분류</strong>
+                            <p>식 - 음식기 - 음식</p>
+                        </li>
+
+                        <li>
+                            <strong>· 크기</strong>
+                            <p>지름 45.0cm</p>
+                        </li>
+
+                        <li>
+                            <strong>· 소속</strong>
+                            <p>국립청주박물관</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--7번 팝업 내용-->
+
+            <div class="popup-inner">
+                <h3>서산 휴암리유적 출토 민무늬 토기·골아가리 토기</h3>
+                <div class="popup-wrap">
+                    <img src="./images/collect/민무늬토기.jpg" alt="">
+                    <ul>
+                        <li>
+                            <strong>· 명칭</strong>
+                            <p>청동 금고</p>
+                        </li>
+
+                        <li>
+                            <strong>· 국적/시대</strong>
+                            <p>한국 - 청동기(靑銅器)</p>
+                        </li>
+
+                        <li>
+                            <strong>· 재질</strong>
+                            <p>토제 - 연질</p>
+                        </li>
+
+                        <li>
+                            <strong>· 분류</strong>
+                            <p>식 - 음식기</p>
+                        </li>
+
+                        <li>
+                            <strong>· 크기</strong>
+                            <p>높이 19.0cm</p>
+                        </li>
+
+                        <li>
+                            <strong>· 소속</strong>
+                            <p>국립부여박물관</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--8번 팝업 내용(끝)-->
+
+        </div>
+        <!--팝업 박스 내부 끝-->
+
+    </div>
+    <!--팝업 영역 끝-->
+
+
+
+
+    <div class="info-area">
+        <div class="open-info">
+            <strong>10:00 ~ 18:00</strong>
+            <p>토요일 및 공휴일 1시간 연장</p>
+            <ul class="info-list">
+                <li>
+                    <p>야간연장개관 ~ 22:00</p>
+                    <p>문화의 날(매달 마지막주 수요일)</p>
+                </li>
+
+                <li>
+                    <p>휴관일 안내</p>
+                    <p>1월 1일 / 설날 & 추석(당일 및 연휴기간 포함)</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="price">
+            <Strong>관람료</Strong>
+            <strong>무료</strong>
+            <p>* 유료 전시 제외</p>
+        </div>
+    </div>
+
+    <div class="footer"> <!-- 푸터 시작-->
+
+        <div class="footer-top">
+
+            <img src="images/국립중앙박물관_흑백로고.PNG" alt="" id="footer-logo"> <!-- footer 왼쪽 상단 로고-->
+
+            <div class="footer-btns"> <!-- footer 우측 상단 a태그-->
+                <a href="">개인정보처리방침</a>
+                <a href="">박물관소개</a>
+                <a href="">관람안내</a>
+                <a href="">이용약관</a>
+                <a href="">전시해설</a>
+                <a href="">누리집지도</a>
+                <a href="">박물관정책</a>
+            </div>
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p class="adress">04383 서울시 용산구 서빙고로 137(용산동6가 168-6)</p>
+            <p class="adress" id="adress-num">대표전화 02-1234-7890</p>
+
+            <p class="copyRight">© NATIONAL Integrated Museum of Korea ALL RIGHT RESERVED.</p>
+
+            <div class="sns-btns">
+                <a href=""><img src="images/footerImages/ico_facebook.png" alt=""></a>
+                <a href=""><img src="images/footerImages/ico_insta.png" alt=""></a>
+                <a href=""><img src="images/footerImages/ico_tw.png" alt=""></a>
+                <a href=""><img src="images/footerImages/ico_youtube.png" alt=""></a>
+                <select class="footer-select" onchange="window.open(value,'_self');">
+                    <option selected>관련기관 바로가기</option>
+                    <option value="https://www.museum.go.kr/site/main/home">국립중앙박물관</option>
+                    <option value="https://gyeongju.museum.go.kr/">국립경주박물관</option>
+                    <option value="https://iksan.museum.go.kr/">국립익산박물관</option>
+                    <option value="https://buyeo.museum.go.kr/index.do">국립부여박물관</option>
+                    <option value="https://gongju.museum.go.kr/kor/index.do">국립공주박물관</option>
+                    <option value="https://chuncheon.museum.go.kr/kor/index.do">국립춘천박물관</option>
+                    <option value="https://jeju.museum.go.kr/html/kr/index.html">국립제주박물관</option>
+                </select>
+            </div>
+
+        </div>
+
+
+    </div>
+    <!-- footer 끝 -->
+
+
+
+    <script>
+
+        let popUpSelect = document.querySelectorAll(".collection img");
+        let popUpDiv = document.querySelectorAll(".popup-inner");
+
+        for (let i = 0; i < popUpSelect.length; i++) {
+            popUpSelect[i].addEventListener("click", () => {
+                document.querySelector(".popup-area").classList.toggle('display-block');
+                popUpDiv[i].classList.toggle('display-block2');
+            });
+        }
+
+
+        let popControl = document.querySelector(".popup-control");
+
+        popControl.addEventListener("click", () => {
+
+            document.querySelector(".popup-area").classList.remove('display-block');
+
+            for (let j = 0; j < popUpDiv.length; j++) {
+                popUpDiv[j].classList.remove('display-block2');
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="./css/signUp.css">
-    
+
 </head>
 
 <body>
-    
+
     <div class="header"> <!-- 사이트 헤더 -->
         <div class="header-side"> <!--맨 위 sns & 로그인 & 회원가입-->
             <a href=""><img src="images/footerImages/ico_facebook.png" alt=""></a>
@@ -36,8 +36,8 @@
                             <li><a href="">시설안내</a></li>
                             <li><a href="">오시는 길</a></li>
                             <li><a href="">접근성 안내</a></li>
-                            <li><a href="./exhibit-info.html">박물관 소개</a></li>
-                        1   <li><a href="./floor-info.html">층별 안내</a></li>
+                            <li><a href="./museum-info.html">박물관 소개</a></li>
+                            <li><a href="./floor-info.html">층별 안내</a></li>
                         </ul>
                     </div>
                 </li>
@@ -89,7 +89,7 @@
                             <li><a href="">소장품 검색</a></li>
                             <li><a href="">국보·보물</a></li>
                             <li><a href="">기증</a></li>
-                            <li><a href="">큐레이터 추천 소장품</a></li>
+                            <li><a href="./collect-info.html">큐레이터 추천 소장품</a></li>
                             <li><a href="">소장품 대여안내</a></li>
                         </ul>
                     </div>
@@ -133,64 +133,72 @@
 
 
 
-        <div class="signUp"> <!-- 회원가입 전체 바디-->
+    <div class="signUp"> <!-- 회원가입 전체 바디-->
 
-            
-            <form action="./main.html">
-                <h2>회원가입</h2>
-                <div class="require-info"> <!-- 필수정보 -->
 
-                    <div class="name-info">
-                        <span>*</span>
-                        <p>이름</p>
-                        <input type="text" id="name" placeholder="아이디를 입력해주세요." required>
-                    </div>
-    
-                    <div class="id_info">
-                        <span>*</span>
-                        <p>아이디</p>
-                        <input type="text" id="id" placeholder="아이디를 입력해주세요." required>
-                    </div>
-    
-                    <div class="passWord-info">
-                        <span>*</span>
-                        <p>비밀번호</p>
-                        <input type="text" id="passWord" placeholder="비밀번호를 입력해주세요." required>
-                    </div>
-    
-                    <div class="passCheck-info">
-                        <span>*</span>
-                        <p>비밀번호 확인</p>
-                        <input type="text" id="passWordCheck" placeholder="비밀번호와 동일하게 입력해주세요." required>
-                    </div>
+        <form action="./main.html">
+            <h2>회원가입</h2>
+            <div class="require-info"> <!-- 필수정보 -->
 
-                    <div class="email-info">
-                        <span>*</span>
-                        <p>이메일</p>
-                        <input type="email" id="email" placeholder="이메일을 입력해주세요." required>
-                    </div>
-    
-                    <div class="phone">
-                        <span>*</span>
-                        <p>휴대폰 번호</p>
-                        <div class="number">
-                            <input type="text" id="number1" required maxlength="3">
-                            <span>-</span>
-                            <input type="text" id="number2" required maxlength="4">
-                            <span>-</span>
-                            <input type="text" id="number3" required maxlength="4">
-                        </div>
-                        
-                    </div>
-
-                    <p class="require-sentence">* 은 필수 입력정보입니다.</p>
-
-                    
-    
+                <div class="name-info">
+                    <span>*</span>
+                    <p>이름</p>
+                    <input type="text" id="name" placeholder="이름을 입력해주세요." required
+                        oninvalid="this.setCustomValidity('이름은 필수 입력 항목 입니다.')" oninput="setCustomValidity('')">
                 </div>
 
+                <div class="id_info">
+                    <span>*</span>
+                    <p>아이디</p>
+                    <input type="text" id="id" placeholder="아이디를 입력해주세요." required
+                        oninvalid="this.setCustomValidity('아이디는 필수 입력 항목 입니다.')" oninput="setCustomValidity('')">
+                </div>
 
-                <h3>추가정보</h3>
+                <div class="passWord-info">
+                    <span>*</span>
+                    <p>비밀번호</p>
+                    <input type="text" id="passWord" placeholder="비밀번호를 입력해주세요." required
+                        oninvalid="this.setCustomValidity('비밀번호는 필수 입력 항목 입니다.')" oninput="setCustomValidity('')">
+                </div>
+
+                <div class="passCheck-info">
+                    <span>*</span>
+                    <p>비밀번호 확인</p>
+                    <input type="text" id="passWordCheck" placeholder="비밀번호와 동일하게 입력해주세요." required
+                        oninvalid="this.setCustomValidity('비밀번호는 필수 입력 항목 입니다.')" oninput="setCustomValidity('')">
+                </div>
+
+                <div class="email-info">
+                    <span>*</span>
+                    <p>이메일</p>
+                    <input type="email" id="email" placeholder="이메일을 입력해주세요." required
+                        oninvalid="this.setCustomValidity('이메일은 필수 입력 항목 입니다.')" oninput="setCustomValidity('')">
+                </div>
+
+                <div class="phone">
+                    <span>*</span>
+                    <p>휴대폰 번호</p>
+                    <div class="number">
+                        <input type="text" id="number1" required maxlength="3"
+                            oninvalid="this.setCustomValidity('휴대폰번호는 필수 입력 항목 입니다.')" oninput="setCustomValidity('')">
+                        <span>-</span>
+                        <input type="text" id="number2" required maxlength="4"
+                            oninvalid="this.setCustomValidity('휴대폰번호는 필수 입력 항목 입니다.')" oninput="setCustomValidity('')">
+                        <span>-</span>
+                        <input type="text" id="number3" required maxlength="4"
+                            oninvalid="this.setCustomValidity('휴대폰번호는 필수 입력 항목 입니다.')" oninput="setCustomValidity('')">
+                    </div>
+
+                </div>
+
+                <p class="require-sentence">* 은 필수 입력정보입니다.</p>
+
+
+
+            </div>
+
+
+            <h3>추가정보</h3>
 
             <div class="add-info"> <!-- 추가 정보-->
 
@@ -238,12 +246,47 @@
 
 
             </div>
-            </form>
-            
+        </form>
 
-            
-        </div>
+
+
+    </div>
     <!-- 회원가입 끝 -->
+
+    <div class="benefit">
+        <strong>통합중앙박물관에 회원이 되시면 다음의 혜택을 받으실 수 있습니다.</strong>
+        <ul class="benefit-text">
+            <li>통합중앙박물관의 교육, 행사, 전시 안내가 메일로 전송 됩니다.</li>
+            <li>매달 1회 특별전시 관람권이 제공됩니다. (특별전시는 매달 변경됨)</li>
+            <li>학술게시판의 회원 공개 전용 게시물을 열람할 수 있습니다.</li>
+        </ul>
+    </div>
+
+
+
+    <div class="info-area">
+        <div class="open-info">
+            <strong>10:00 ~ 18:00</strong>
+            <p>토요일 및 공휴일 1시간 연장</p>
+            <ul class="info-list">
+                <li>
+                    <p>야간연장개관 ~ 22:00</p>
+                    <p>문화의 날(매달 마지막주 수요일)</p>
+                </li>
+
+                <li>
+                    <p>휴관일 안내</p>
+                    <p>1월 1일 / 설날 & 추석(당일 및 연휴기간 포함)</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="price">
+            <Strong>관람료</Strong>
+            <strong>무료</strong>
+            <p>* 유료 전시 제외</p>
+        </div>
+    </div>
 
     <div class="footer"> <!-- 푸터 시작-->
 
@@ -275,15 +318,15 @@
                 <a href=""><img src="images/footerImages/ico_insta.png" alt=""></a>
                 <a href=""><img src="images/footerImages/ico_tw.png" alt=""></a>
                 <a href=""><img src="images/footerImages/ico_youtube.png" alt=""></a>
-                <select class="footer-select">
-                    <option>관련기관 바로가기</option>
-                    <option>국립중앙박물관</option>
-                    <option>국립경주박물관</option>
-                    <option>국립익산박물관</option>
-                    <option>국립부여박물관</option>
-                    <option>국립공주박물관</option>
-                    <option>국립춘천박물관</option>
-                    <option>국립제주박물관</option>
+                <select class="footer-select" onchange="window.open(value,'_self');">
+                    <option selected>관련기관 바로가기</option>
+                    <option value="https://www.museum.go.kr/site/main/home">국립중앙박물관</option>
+                    <option value="https://gyeongju.museum.go.kr/">국립경주박물관</option>
+                    <option value="https://iksan.museum.go.kr/">국립익산박물관</option>
+                    <option value="https://buyeo.museum.go.kr/index.do">국립부여박물관</option>
+                    <option value="https://gongju.museum.go.kr/kor/index.do">국립공주박물관</option>
+                    <option value="https://chuncheon.museum.go.kr/kor/index.do">국립춘천박물관</option>
+                    <option value="https://jeju.museum.go.kr/html/kr/index.html">국립제주박물관</option>
                 </select>
             </div>
 

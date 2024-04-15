@@ -87,7 +87,7 @@
                             <li><a href="">소장품 검색</a></li>
                             <li><a href="">국보·보물</a></li>
                             <li><a href="">기증</a></li>
-                            <li><a href="">큐레이터 추천 소장품</a></li>
+                            <li><a href="./collect-info.html">큐레이터 추천 소장품</a></li>
                             <li><a href="">소장품 대여안내</a></li>
                         </ul>
                     </div>
@@ -121,9 +121,9 @@
             <ul class="login-process">
                 <li class="login-list1"><a href="./main.html"><img src="./images/홈아이콘.png" alt="홈"></a></li>
                 <li class="login-list2"><img src="./images/로그인화살표.png" alt=""></li>
-                <li class="login-list3"><a href="./login.html">관람정보</a></li>
+                <li class="login-list3"><a href="./main.html">관람정보</a></li>
                 <li class="login-list2"><img src="./images/로그인화살표.png" alt=""></li>
-                <li class="login-list3"><a href="./login.html">박물관 소개</a></li>
+                <li class="login-list3"><a href="./museum-info.html">박물관 소개</a></li>
             </ul>
         </div>
     </div>
@@ -258,15 +258,15 @@
                 <a href=""><img src="images/footerImages/ico_insta.png" alt=""></a>
                 <a href=""><img src="images/footerImages/ico_tw.png" alt=""></a>
                 <a href=""><img src="images/footerImages/ico_youtube.png" alt=""></a>
-                <select class="footer-select">
-                    <option>관련기관 바로가기</option>
-                    <option>국립중앙박물관</option>
-                    <option>국립경주박물관</option>
-                    <option>국립익산박물관</option>
-                    <option>국립부여박물관</option>
-                    <option>국립공주박물관</option>
-                    <option>국립춘천박물관</option>
-                    <option>국립제주박물관</option>
+                <select class="footer-select" onchange="window.open(value,'_self');">
+                    <option selected>관련기관 바로가기</option>
+                    <option value="https://www.museum.go.kr/site/main/home">국립중앙박물관</option>
+                    <option value="https://gyeongju.museum.go.kr/">국립경주박물관</option>
+                    <option value="https://iksan.museum.go.kr/">국립익산박물관</option>
+                    <option value="https://buyeo.museum.go.kr/index.do">국립부여박물관</option>
+                    <option value="https://gongju.museum.go.kr/kor/index.do">국립공주박물관</option>
+                    <option value="https://chuncheon.museum.go.kr/kor/index.do">국립춘천박물관</option>
+                    <option value="https://jeju.museum.go.kr/html/kr/index.html">국립제주박물관</option>
                 </select>
             </div>
         </div>
@@ -282,6 +282,8 @@
 
             
         }, 500);
+
+        /*
         window.addEventListener('scroll', () => {
             document.querySelector(".intro-img2").style.opacity = 1;
             document.querySelector(".intro-img2").style.top = 0; //500에서
@@ -296,6 +298,31 @@
             document.querySelector(".intro-img5").style.top = 0; //500에서
 
         });
+
+        */
+
+        window.addEventListener("scroll", ()=>{
+            let scrollY = this.scrollY;
+            
+            if(scrollY >= 2100){
+                document.querySelector(".intro-img5").style.opacity = 1;
+                document.querySelector(".intro-img5").style.top = 0;
+            }
+            else if(scrollY >= 1500){
+                document.querySelector(".intro-img4").style.opacity = 1;
+                document.querySelector(".intro-img4").style.top = 0; 
+            }
+            else if(scrollY >= 800){
+                document.querySelector(".intro-img3").style.opacity = 1;
+                document.querySelector(".intro-img3").style.top = 0;
+            }
+            else if(scrollY >= 300){
+                document.querySelector(".intro-img2").style.opacity = 1;
+                document.querySelector(".intro-img2").style.top = 0;
+            }
+
+        });
+
     </script>
 </body>
 
