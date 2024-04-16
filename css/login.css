@@ -11,11 +11,9 @@
     text-align: center;
 }
 
-
 .login-location {
     margin-bottom: 40px;
 }
-
 
 .login-process {
     list-style: none;
@@ -33,15 +31,13 @@
 .login-list3>a {
     vertical-align: middle;
     text-decoration: none;
+
     color: #727272;
 }
-
 
 .login-process li {
     margin-right: 15px;
 }
-
-
 
 .login h2,
 .login h3 {
@@ -56,17 +52,15 @@
 .login-section {
     width: 60%;
     margin: 0 auto;
-
-
 }
 
 .id-section,
 .pw-section {
     width: 50%;
     margin: 0 auto;
+
     display: flex;
     justify-content: space-between;
-
 }
 
 .id-section>span,
@@ -74,73 +68,67 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+
     margin-top: 10px;
+
     letter-spacing: -2px;
 }
-
-
-
-
 
 #id-input,
 #pw-input {
     width: 70%;
     height: 40px;
     margin-top: 20px;
-   letter-spacing: -1px;
+
+    letter-spacing: -1px;
 }
 
-#btn-login{
+#btn-login {
     width: 50%;
     height: 40px;
-
 }
 
 #id-input,
 #pw-input {
-   
     border-width: 0 0 1px 0;
 }
-
 
 #btn-login {
     margin: 0 auto;
     margin-top: 40px;
+
     display: flex;
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
+
     text-decoration: none;
+
     border: none;
     border-radius: 10px;
+
     background-color: #196dff;
     color: white;
 
     cursor: pointer;
-
-
 }
 
-
-
-
-.login-text{
+.login-text {
     width: 50%;
-   
+
     margin: 0 auto;
     margin-top: 10px;
+    
     display: flex;
     justify-content: space-between;
 }
 
-.login-text > a {
+.login-text>a {
     text-decoration: none;
     color: #727272;
     font-size: 0.9rem;
     letter-spacing: -2px;
 }
-
-
 
 h3 {
     margin-top: 10px;
@@ -151,15 +139,15 @@ h3 {
     width: 50px;
     height: 50px;
     margin-right: 20px;
-   
+
     object-fit: cover;
 }
 
 .line {
-    border: 1px solid lightgray;
+    width: 80%;
     margin: 30px auto;
 
-    width: 80%;
+    border: 1px solid lightgray;
 }
 
 .color-border {
@@ -168,16 +156,17 @@ h3 {
 }
 
 .benefit {
-    margin: 100px auto;
     width: 60%;
     height: 200px;
-    background-color: #d1d1d1;
+
+    margin: 100px auto;
     padding: 30px;
+
+    background-color: #d1d1d1;
 }
 
 .benefit>strong {
     letter-spacing: -2px;
-
 }
 
 .benefit-text {
@@ -189,7 +178,8 @@ h3 {
 }
 
 .benefit-text>li {
-    list-style-type: none;
     margin-top: 15px;
+    
+    list-style-type: none;
     letter-spacing: -2px;
 }

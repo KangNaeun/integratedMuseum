@@ -1,26 +1,32 @@
-.intro-area{
-    width: 90%;
-    margin: 0 auto;
-
-    height: 3400px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+.intro-area{
+    width: 90%;
+    height: 3400px;
 
-
+    margin: 0 auto;
+}
 
 .intro-img{
     width: 100%;
-   
+
     position: relative;
+    top: 100px;
+
     transition-property: all;
     transition-duration: 1s;
+
     opacity: 0;
-    top: 100px;
 }
 
 .intro-img > img{
-    height: 500px;
     width: 100%;
+    height: 500px;
+
     object-fit: cover;
 }
 
@@ -28,9 +34,11 @@
     position: absolute;
     right: 5%;
     top:350px;
+
     letter-spacing: -2px;
     font-size: 1.6rem;
     text-align: right;
+    
     line-height: 200%;
 }
 
@@ -38,95 +46,112 @@
     font-size: 1.7rem;
 }
 
-
 .intro-img2{
     width: 60%;
-   
-
 
     transition-property: all;
     transition-duration: 1s;
     transition-delay: 0.5s;
+
     opacity: 0;
+
     top: 100px;
 }
 
 .introduce2, .introduce3, .introduce5{
     width: 100%;
-    letter-spacing: -2px;
-    font-size: 1.4rem;
-    text-align: left;
-    line-height: 160%;
 
     padding-left: 30px;
     margin-top: 20px;
-}
-.introduce4, .introduce6{
-    width: 100%;
+
     letter-spacing: -2px;
     font-size: 1.4rem;
-    text-align: right;
+
+    text-align: left;
     line-height: 160%;
+}
+
+.introduce4, .introduce6{
+    width: 100%;
 
     padding-right: 30px;
     margin-top: 20px;
+
+    letter-spacing: -2px;
+    font-size: 1.4rem;
+
+    text-align: right;
+    line-height: 160%;
 }
+
 .intro-img3{
     width: 100%;
+
     text-align: right;
+
     position: relative;
+    top: 100px;
+    
     transition-property: all;
     transition-duration: 1s;
     transition-delay: 0.5s;
-    opacity: 0;
-    top: 100px;
     
+    opacity: 0;
 }
 
 .intro-img3 > img{
+    width: 80%;
     height: 400px;
-   width: 80%;
-   margin-top: 30px;
-   object-fit: cover;
+
+    margin-top: 30px;
+
+    object-fit: cover;
 }
 
 .intro-img4{
     width: 100%;
+
     text-align: left;
+
     position: relative;
+    top: 100px;
+
     transition-property: all;
     transition-duration: 1s;
     transition-delay: 0.5s;
-    opacity: 0;
-    top: 100px;
-}
 
+    opacity: 0;
+}
 
 .intro-img4 > img{
     height: 400px;
     width: 80%;
+
     margin-top: 50px;
+
     object-fit: cover;
 }
 
 .intro-img5{
     width: 100%;
+
     text-align: right;
+
     position: relative;
+    top: 100px;
+
     transition-property: all;
     transition-duration: 1s;
     transition-delay: 0.5s;
+
     opacity: 0;
-    top: 100px;
 }
 
 .intro-img5 > img{
-    height: 400px;
     width: 80%;
+    height: 400px;
+
     margin-top: 50px;
+
     object-fit: cover;
 }
-
-
-
-

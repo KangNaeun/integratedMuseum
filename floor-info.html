@@ -34,7 +34,7 @@
                             <li><a href="">시설안내</a></li>
                             <li><a href="">오시는 길</a></li>
                             <li><a href="">접근성 안내</a></li>
-                            <li><a href="./exhibit-info.html">박물관 소개</a></li>
+                            <li><a href="./museum-info.html">박물관 소개</a></li>
                             <li><a href="./floor-info.html">층별 안내</a></li>
                         </ul>
                     </div>
@@ -97,13 +97,13 @@
                     <a href="" class="depth1-btn">소속박물관 소개</a>
                     <div class="sub-menu">
                         <ul class="depth2">
-                            <li><a href="">국립중앙박물관</a></li>
-                            <li><a href="">국립경주박물관</a></li>
-                            <li><a href="">국립공주박물관</a></li>
-                            <li><a href="">국립나주박물관</a></li>
-                            <li><a href="">국립부여박물관</a></li>
-                            <li><a href="">국립익산박물관</a></li>
-                            <li><a href="">국립춘천박물관</a></li>
+                            <li><a href="https://www.museum.go.kr/site/main/home">국립중앙박물관</a></li>
+                            <li><a href="https://gyeongju.museum.go.kr/">국립경주박물관</a></li>
+                            <li><a href="https://gongju.museum.go.kr/kor/index.do">국립공주박물관</a></li>
+                            <li><a href="https://naju.museum.go.kr/">국립나주박물관</a></li>
+                            <li><a href="https://buyeo.museum.go.kr/index.do">국립부여박물관</a></li>
+                            <li><a href="https://iksan.museum.go.kr/">국립익산박물관</a></li>
+                            <li><a href="https://chuncheon.museum.go.kr/kor/index.do">국립춘천박물관</a></li>
                         </ul>
                     </div>
                 </li>
@@ -243,14 +243,7 @@
             </div>
         </div>
 
-
-
-
     </div>
-
-
-
-
 
 
 
@@ -315,34 +308,11 @@
 
         let floorText = document.querySelectorAll(".floor-name");
 
-
-        // for (let i = 0; i < floorSelect.length; i++){
-        //     floorSelect[i].addEventListener('mouseover', ()=>{
-        //         floorSelect[i].classList.add("font-before");
-        //         floorSelect[i].classList.add("font-after");
-        //     });
-        // }
-
-        // for (let i = 0; i < floorSelect.length; i++){
-        //     floorSelect[i].addEventListener('mouseout', ()=>{
-        //         floorSelect[i].classList.remove("font-before");
-        //         floorSelect[i].classList.remove("font-after");
-        //     });
-        // }
-
-
-
-
-
-
-
         function hideAllFloor(i) {
-            
             for (let k = 0; k < floorImg.length; k++) {
                 floorImg[k].classList.remove("floor-block");
                 floorText[k].classList.remove("font-after");
                 floorSelect[k].classList.remove("font-before");
-               
             }
         }
         //다 지우고
@@ -354,10 +324,7 @@
                     floorImg[j].classList.add("floor-block");
                     floorText[j].classList.add("font-after");
                     floorSelect[j].classList.add("font-before");
-                  
-
                 }
-
             }
         }
         //선택된 div만 나타나게
@@ -369,7 +336,6 @@
 
                 hideAllFloor(i);
                 selectShowFloor(i);
-
             });
         }
 
