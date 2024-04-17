@@ -699,25 +699,28 @@
 
     <script>
 
-        let popUpSelect = document.querySelectorAll(".collection img");
-        let popUpDiv = document.querySelectorAll(".popup-inner");
+        let popUpSelect = document.querySelectorAll(".collection img"); //소장품 이미지들
+        let popUpDiv = document.querySelectorAll(".popup-inner"); //소장품의 팝업 이미지들
 
         for (let i = 0; i < popUpSelect.length; i++) {
             popUpSelect[i].addEventListener("click", () => {
                 document.querySelector(".popup-area").classList.toggle('display-block');
+                //배경을 불투명하게 함
                 popUpDiv[i].classList.toggle('display-block2');
+                //소장품에 맞는 팝업 div를 block 시킴
             });
         }
 
 
         let popControl = document.querySelector(".popup-control");
+        //팝업창 오른쪽 상단에 뜨는 x 버튼
 
         popControl.addEventListener("click", () => {
-
             document.querySelector(".popup-area").classList.remove('display-block');
-
+            //불투명한 배경의 block을 해제함
             for (let j = 0; j < popUpDiv.length; j++) {
                 popUpDiv[j].classList.remove('display-block2');
+                //팝업 div를 사라지게 함
             }
         });
     </script>

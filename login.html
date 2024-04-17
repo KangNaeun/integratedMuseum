@@ -268,10 +268,12 @@
         let id_input = document.querySelector("#id-input");
         let pw_input = document.querySelector("#pw-input");
 
+        //focus 일 때
         id_input.addEventListener("focus", () => {
             id_input.classList.add("color-border");
         });
-
+        
+        //focus를 벗어났을 때
         id_input.addEventListener("blur", () => {
             id_input.classList.remove("color-border");
         });

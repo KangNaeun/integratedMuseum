@@ -311,36 +311,35 @@
         function hideAllFloor(i) {
             for (let k = 0; k < floorImg.length; k++) {
                 floorImg[k].classList.remove("floor-block");
+                //display: block; 효과
+
                 floorText[k].classList.remove("font-after");
+                //폰트를 bold 시키는 효과
+
                 floorSelect[k].classList.remove("font-before");
+                //border-bottom을 진하게 하는 효과
             }
         }
-        //다 지우고
-
+        
         function selectShowFloor(index) {
-            for (let j = 0; j < floorImg.length; j++) {
-                if (index == j) {
-                    // floorImg[j].classList.remove("floor-none");
-                    floorImg[j].classList.add("floor-block");
-                    floorText[j].classList.add("font-after");
-                    floorSelect[j].classList.add("font-before");
-                }
-            }
-        }
-        //선택된 div만 나타나게
+            floorImg[index].classList.add("floor-block");
+            //display: block; 효과
 
+            floorText[index].classList.add("font-after");
+            //폰트를 bold 시키는 효과
+
+            floorSelect[index].classList.add("font-before");
+            //border-bottom을 진하게 하는 효과
+        }
+        
 
         for (let i = 0; i < floorSelect.length; i++) {
             floorSelect[i].addEventListener('click', () => {
-                floorSelect[0].classList.remove("floor-block");
-
-                hideAllFloor(i);
-                selectShowFloor(i);
+                hideAllFloor(i); //모든요소들의 이미지, 폰트효과를 없앰
+                selectShowFloor(i); //선택된 층의 이미지만 보여줌
             });
         }
-
-
-
+        
     </script>
 
 </body>

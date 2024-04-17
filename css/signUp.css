@@ -105,7 +105,7 @@
 #name:focus, #id:focus, #passWord:focus, #passWordCheck:focus,
 #number1:focus, #number2:focus, #number3:focus,
 #day:focus, #email:hover, .birthDay-select > select:hover {
-    outline: none;
+    outline: none; /*윤곽선 없애는 속성*/
 
     border-width: 0 0 2px 0;
     border-color: #196dff;

@@ -271,14 +271,14 @@
 
 
     <script>
+
+        //페이지 접속하자마자 뜨게 함
         setTimeout(()=>{
             document.querySelector(".intro-img").style.opacity = 1;
-            document.querySelector(".intro-img").style.top = 0; //300에서 0
-
-            
+            document.querySelector(".intro-img").style.top = 0;
         }, 500);
 
-
+        //스크롤 y값을 가져옴
         window.addEventListener("scroll", ()=>{
             let scrollY = this.scrollY;
             
