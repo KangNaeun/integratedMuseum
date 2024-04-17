@@ -4,14 +4,14 @@
     box-sizing: border-box;
 }
 
-.intro-area{
+.intro-area {
     width: 90%;
     height: 3400px;
 
     margin: 0 auto;
 }
 
-.intro-img{
+.intro-img {
     width: 100%;
 
     position: relative;
@@ -23,30 +23,30 @@
     opacity: 0;
 }
 
-.intro-img > img{
+.intro-img>img {
     width: 100%;
     height: 500px;
 
     object-fit: cover;
 }
 
-.introduce{
+.introduce {
     position: absolute;
     right: 5%;
-    top:350px;
+    top: 350px;
 
     letter-spacing: -2px;
     font-size: 1.6rem;
     text-align: right;
-    
+
     line-height: 200%;
 }
 
-.introduce > strong{
+.introduce>strong {
     font-size: 1.7rem;
 }
 
-.intro-img2{
+.intro-img2 {
     width: 60%;
 
     transition-property: all;
@@ -58,7 +58,9 @@
     top: 100px;
 }
 
-.introduce2, .introduce3, .introduce5{
+.introduce2,
+.introduce3,
+.introduce5 {
     width: 100%;
 
     padding-left: 30px;
@@ -71,7 +73,8 @@
     line-height: 160%;
 }
 
-.introduce4, .introduce6{
+.introduce4,
+.introduce6 {
     width: 100%;
 
     padding-right: 30px;
@@ -84,22 +87,22 @@
     line-height: 160%;
 }
 
-.intro-img3{
+.intro-img3 {
     width: 100%;
 
     text-align: right;
 
     position: relative;
     top: 100px;
-    
+
     transition-property: all;
     transition-duration: 0.5s;
     transition-delay: 0.5s;
-    
+
     opacity: 0;
 }
 
-.intro-img3 > img{
+.intro-img3>img {
     width: 80%;
     height: 400px;
 
@@ -108,7 +111,7 @@
     object-fit: cover;
 }
 
-.intro-img4{
+.intro-img4 {
     width: 100%;
 
     text-align: left;
@@ -123,7 +126,7 @@
     opacity: 0;
 }
 
-.intro-img4 > img{
+.intro-img4>img {
     height: 400px;
     width: 80%;
 
@@ -132,7 +135,7 @@
     object-fit: cover;
 }
 
-.intro-img5{
+.intro-img5 {
     width: 100%;
 
     text-align: right;
@@ -147,7 +150,7 @@
     opacity: 0;
 }
 
-.intro-img5 > img{
+.intro-img5>img {
     width: 80%;
     height: 400px;
 

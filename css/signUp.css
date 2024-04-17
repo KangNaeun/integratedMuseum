@@ -15,15 +15,15 @@
     width: 35%;
 
     letter-spacing: -2px;
-    
+
     display: flex;
     justify-content: left;
     align-items: center;
 }
 
-.signUp .require-sentence{
+.signUp .require-sentence {
     width: 80%;
-    
+
     margin: 0 auto;
     margin-top: 10px;
 
@@ -32,7 +32,7 @@
     font-size: 0.9rem;
 }
 
-.require-info span:not(.number span){
+.require-info span:not(.number span) {
     color: #ff3f3f;
 }
 
@@ -51,7 +51,7 @@
     flex-wrap: wrap;
 }
 
-.gender{
+.gender {
     width: 100%;
 
     margin: 20px 0;
@@ -86,7 +86,7 @@
 }
 
 
-.add-info{
+.add-info {
     width: 80%;
 
     margin: 0 auto;
@@ -96,22 +96,37 @@
     flex-wrap: wrap;
 }
 
-#name, #id, #passWord, #passWordCheck,
-#number1, #number2, #number3, #day, #email{
+#name,
+#id,
+#passWord,
+#passWordCheck,
+#number1,
+#number2,
+#number3,
+#day,
+#email {
     border: 1px solid #d1d1d1;
     border-width: 0 0 1px 0;
 }
 
-#name:focus, #id:focus, #passWord:focus, #passWordCheck:focus,
-#number1:focus, #number2:focus, #number3:focus,
-#day:focus, #email:hover, .birthDay-select > select:hover {
-    outline: none; /*윤곽선 없애는 속성*/
+#name:focus,
+#id:focus,
+#passWord:focus,
+#passWordCheck:focus,
+#number1:focus,
+#number2:focus,
+#number3:focus,
+#day:focus,
+#email:hover,
+.birthDay-select>select:hover {
+    outline: none;
+    /*윤곽선 없애는 속성*/
 
     border-width: 0 0 2px 0;
     border-color: #196dff;
 }
 
-.birthDay-select > select{
+.birthDay-select>select {
     outline: none;
 
     width: 25%;
@@ -135,12 +150,13 @@
     justify-content: left;
 }
 
-h2, h3{
+h2,
+h3 {
     letter-spacing: -2px;
     font-weight: 500;
 }
 
-h2{
+h2 {
     margin: 20px 0;
 }
 
@@ -174,7 +190,7 @@ h3 {
     justify-content: left;
 }
 
-.birthDay-select span{
+.birthDay-select span {
     margin-left: 10px;
 
     display: flex;
@@ -198,4 +214,13 @@ h3 {
     font-size: 1.2rem;
 
     cursor: pointer;
+}
+
+@media screen and (max-width: 1140px) {
+
+    #number1,
+    #number2,
+    #number3 {
+        width: 27%;
+    }
 }

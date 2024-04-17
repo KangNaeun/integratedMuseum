@@ -118,7 +118,7 @@
 
     margin: 0 auto;
     margin-top: 10px;
-    
+
     display: flex;
     justify-content: space-between;
 }
@@ -157,7 +157,7 @@ h3 {
 
 .benefit {
     width: 60%;
-    height: 200px;
+    height: 100%;
 
     margin: 100px auto;
     padding: 30px;
@@ -179,7 +179,20 @@ h3 {
 
 .benefit-text>li {
     margin-top: 15px;
-    
+
     list-style-type: none;
     letter-spacing: -2px;
+}
+
+@media screen and (max-width: 700px) {
+
+    .id-section>span,
+    .pw-section>span {
+        font-size: 0.8rem;
+    }
+
+    #id-input,
+    #pw-input {
+        font-size: 0.7rem;
+    }
 }

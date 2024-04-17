@@ -184,6 +184,7 @@
         transform: translateX(0);
         animation-timing-function: ease;
     }
+
     /* 첫번째 키프레임은 0%, 100%,
     100% / 이미지 슬라이드 수 - (전체시간에서 전환시간이 차지하는 퍼센트)
     (100% / 5) - 4% = 16%  */
@@ -194,12 +195,14 @@
         /* step-end: 다음 단계를 눈으로 볼 수 없음
         translateX(100%)으로 이동하는 과정이 눈에 보이지 않게 함 */
     }
+
     /* 두번째 키프레임은 100% / 슬라이드 수 */
 
     96% {
         transform: translateX(100%);
         animation-timing-function: ease;
     }
+
     /* 세번째 키프레임은 100% - (전체시간에서 전환시간이 차지하는 퍼센트)
     100% - 4% = 96% */
 }
@@ -476,7 +479,7 @@
 
 .scholar-outter {
     margin: 0 auto;
-    
+
     width: 470px;
     height: 450px;
 
@@ -488,7 +491,7 @@
     height: 450px;
 
     display: flex;
-    
+
     position: relative;
 }
 
@@ -652,38 +655,40 @@
     letter-spacing: -2px;
 }
 
-@media screen and (max-width: 1255px){
-    .notice-p{
+@media screen and (max-width: 1255px) {
+    .notice-p {
         width: 60px;
     }
-        
-    .notice-list p, .notice-list span{
+
+    .notice-list p,
+    .notice-list span {
         font-size: 0.9rem;
     }
 
-    .bottom-ani-pic{
+    .bottom-ani-pic {
         background-size: contain;
     }
 }
 
-@media screen and (max-width: 1190px){
-    .notice-list p, .notice-list span{
+@media screen and (max-width: 1190px) {
+    .notice-list p,
+    .notice-list span {
         font-size: 0.8rem;
     }
 }
 
-@media screen and (max-width: 1175px){
-    .notice-p{
+@media screen and (max-width: 1175px) {
+    .notice-p {
         width: 50px;
     }
 
-    .notice-list p, .notice-list span{
+    .notice-list p,
+    .notice-list span {
         font-size: 0.7rem;
     }
 }
 
 @media screen and (max-width: 1170px) {
-
     .header-nav {
         width: 100%
     }
@@ -701,43 +706,60 @@
     }
 }
 
-@media screen and (max-width: 970px){
-    .notice-section{
+@media screen and (max-width: 990px) {
+    .notice-section {
         flex-wrap: wrap;
         align-items: center;
     }
 
-    .notice-p{
+    .notice-p {
         width: 80px;
     }
 
-    .notice{
+    .notice {
         width: 100%;
-        
     }
 
-    .notice-list p, .notice-list span{
+    .notice-list p,
+    .notice-list span {
         font-size: 1rem;
     }
 
-    .scholar{
+    .scholar {
         width: 100%;
     }
 
-    #header-logo{
+    #header-logo {
         width: 100%;
     }
-} 
 
-@media screen and (max-width: 850px){
-    .depth1{
-        margin-top: 10px;
+    .sub-menu {
+        top: 75px;
     }
-    .depth1 a{
+
+    .depth1-btn:hover {
+        text-underline-offset: 10px;
+    }
+
+    .sub-menu>ul>li>a {
         font-size: 1rem;
     }
 }
 
+@media screen and (max-width: 850px) {
+    .depth1 {
+        margin-top: 10px;
+    }
 
+    .depth1 a {
+        font-size: 1rem;
+    }
 
+    .sub-menu {
+        top: 65px;
+    }
 
+    .depth1>li:nth-child(6)>.sub-menu a {
+        font-size: 0.7rem;
+    }
+}
