@@ -184,19 +184,27 @@
         transform: translateX(0);
         animation-timing-function: ease;
     }
+    /* 첫번째 키프레임은 0%, 100%,
+    100% / 이미지 슬라이드 수 - (전체시간에서 전환시간이 차지하는 퍼센트)
+    (100% / 5) - 4% = 16%  */
 
     20% {
         transform: translateX(-100%);
         animation-timing-function: step-end;
+        /* step-end: 다음 단계를 눈으로 볼 수 없음
+        translateX(100%)으로 이동하는 과정이 눈에 보이지 않게 함 */
     }
+    /* 두번째 키프레임은 100% / 슬라이드 수 */
 
     96% {
         transform: translateX(100%);
         animation-timing-function: ease;
     }
+    /* 세번째 키프레임은 100% - (전체시간에서 전환시간이 차지하는 퍼센트)
+    100% - 4% = 96% */
 }
 
-
+/* delay =  -(애니메이션 지속시간 * 슬라이드 넘버) / 전체 슬라이드 수 */
 .main-pic .main-pic-slide:nth-child(1) {
     background-image: url("../images/main-pic/메소포타미아저기록의땅.jpg");
 
